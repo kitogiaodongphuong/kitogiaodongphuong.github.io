@@ -2,7 +2,7 @@
       --paper: #f3f0e8;
       --surface: #faf8f2;
       --ink: #292820;
-      --muted: #716e63;
+      --muted: #66635a;
       --green: #263a35;
       --green-light: #e4e9e1;
       --red: #783f3f;
@@ -226,6 +226,10 @@
       font-weight: 600;
     }
 
+    body.dark .primary-link {
+      color: #1b2320;
+    }
+
     .hero-art {
       min-height: 390px;
       position: relative;
@@ -369,7 +373,7 @@
       min-height: 135px;
       display: grid;
       place-items: center;
-      background: linear-gradient(145deg, #c8bea2, #777f69);
+      background: linear-gradient(145deg, #9a8f72, #5f6a57);
       color: white;
       font-size: 43px;
     }
@@ -410,7 +414,7 @@
       padding: 3px 8px;
       border-radius: 2px;
       background: var(--green-light);
-      color: var(--green);
+      color: var(--ink);
       font-size: 11px;
     }
 
