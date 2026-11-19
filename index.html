@@ -274,6 +274,59 @@
       font-size: 12px;
     }
 
+
+    /* Ảnh tư liệu thật */
+    .hero-art {
+      background: #263a35;
+    }
+
+    .hero-art .hero-photo {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 48%;
+    }
+
+    .hero-art::before {
+      z-index: 1;
+      background: linear-gradient(0deg, rgba(29,42,34,.68), rgba(29,42,34,.04) 72%);
+    }
+
+    .hero-art-note {
+      z-index: 2;
+      text-shadow: 0 1px 4px rgba(0,0,0,.65);
+    }
+
+    .article-art {
+      position: relative;
+      overflow: hidden;
+      padding: 0;
+      background: var(--green-light);
+    }
+
+    .article-art img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      min-height: inherit;
+      object-fit: cover;
+    }
+
+    .image-credit {
+      display: block;
+      margin-top: 5px;
+      color: var(--muted);
+      font-size: 10px;
+      line-height: 1.35;
+    }
+
+    .image-credit a {
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
     /* Nội dung chính */
 
     .content-layout {
@@ -704,34 +757,13 @@
           <a class="primary-link" href="bai-viet.html">Khám phá bài viết →</a>
         </div>
 
-        <div class="hero-art" role="img" aria-label="Minh họa kiến trúc tu viện Đông phương">
-          <svg viewBox="0 0 500 350" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <circle cx="250" cy="145" r="106" fill="#d1b56f" opacity=".75"/>
-            <circle cx="250" cy="145" r="91" fill="none" stroke="#f2e4bc" stroke-width="3"/>
-            <path d="M35 310 L75 255 L115 275 L165 215 L210 250 L250 205 L305 255 L350 220 L410 270 L465 235 L500 290 L500 350 L35 350Z" fill="#34483b"/>
-            <g fill="#e9d9b6" stroke="#604e39" stroke-width="3">
-              <path d="M135 258 V178 H194 V258Z"/>
-              <path d="M125 178 L164 140 L204 178Z"/>
-              <path d="M151 140 Q164 94 177 140Z"/>
-              <path d="M224 258 V155 H298 V258Z"/>
-              <path d="M214 155 L261 112 L308 155Z"/>
-              <path d="M246 112 Q261 56 276 112Z"/>
-              <path d="M328 258 V190 H381 V258Z"/>
-              <path d="M318 190 L354 151 L391 190Z"/>
-              <path d="M342 151 Q354 108 366 151Z"/>
-            </g>
-            <g stroke="#604e39" stroke-width="4" fill="none">
-              <path d="M261 42 V76 M248 53 H274 M253 64 H269"/>
-              <path d="M164 82 V104 M153 92 H175"/>
-              <path d="M354 96 V119 M343 106 H365"/>
-            </g>
-            <g fill="#604e39">
-              <path d="M151 258 V217 Q164 198 177 217 V258Z"/>
-              <path d="M246 258 V210 Q261 188 276 210 V258Z"/>
-              <path d="M342 258 V222 Q354 205 366 222 V258Z"/>
-            </g>
-          </svg>
-          <span class="hero-art-note">Truyền thống và di sản Đông phương</span>
+        <div class="hero-art" role="img" aria-label="Tu viện Simonopetra trên núi Athos, Hy Lạp">
+          <img class="hero-photo"
+               src="https://commons.wikimedia.org/wiki/Special:FilePath/Simonopetra_Monastery%2C_Mount_Athos.jpg"
+               alt="Tu viện Simonopetra xây dựng trên vách đá ở núi Athos"
+               loading="eager"
+               fetchpriority="high">
+          <span class="hero-art-note">Tu viện Simonopetra · Núi Athos, Hy Lạp</span>
         </div>
 
       </div>
@@ -748,7 +780,10 @@
         <div class="article-list" id="articleList">
 
           <article class="article-card" data-search="núi athos chính thống giáo lịch sử tu viện hy lạp">
-            <div class="article-art" aria-hidden="true">⌂</div>
+            <div class="article-art">
+              <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Simonopetra_Monastery%2C_Mount_Athos.jpg"
+                   alt="Tu viện Simonopetra trên núi Athos" loading="lazy">
+            </div>
             <div class="article-copy">
               <div class="article-tags">
                 <span>Lịch sử Giáo hội</span>
@@ -757,11 +792,15 @@
               <h3><a href="#bai-viet">Núi Athos – trái tim thiêng liêng của Chính thống giáo</a></h3>
               <p>Một hành trình khám phá lịch sử, đời sống tu trì và ý nghĩa thiêng liêng của Núi Athos.</p>
               <div class="article-meta">Bài viết mẫu · 12 phút đọc</div>
+              <small class="image-credit">Ảnh: Angelos @ Ottawa · <a href="https://commons.wikimedia.org/wiki/File:Simonopetra_Monastery,_Mount_Athos.jpg" target="_blank" rel="noopener">Wikimedia Commons · CC0</a></small>
             </div>
           </article>
 
           <article class="article-card" data-search="thánh thể phụng vụ bí tích kitô giáo đông phương">
-            <div class="article-art second" aria-hidden="true">✝</div>
+            <div class="article-art second">
+              <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Christ_Pantocrator_icon.jpg"
+                   alt="Thánh tượng Chúa Kitô Pantokrator" loading="lazy">
+            </div>
             <div class="article-copy">
               <div class="article-tags">
                 <span>Phụng vụ và bí tích</span>
@@ -770,11 +809,15 @@
               <h3><a href="#bai-viet">Ý nghĩa của Thánh Thể trong truyền thống Đông phương</a></h3>
               <p>Từ phụng vụ cổ đại đến đời sống thiêng liêng của cộng đoàn Kitô hữu hôm nay.</p>
               <div class="article-meta">Bài viết mẫu · 10 phút đọc</div>
+              <small class="image-credit">Thánh tượng: <a href="https://commons.wikimedia.org/wiki/File:Christ_Pantocrator_icon.jpg" target="_blank" rel="noopener">Wikimedia Commons · Phạm vi công cộng</a></small>
             </div>
           </article>
 
           <article class="article-card" data-search="giáo phụ thần học grêgôriô palamas hesychasm">
-            <div class="article-art third" aria-hidden="true">✥</div>
+            <div class="article-art third">
+              <img src="https://commons.wikimedia.org/wiki/Special:FilePath/ChurchInterior.jpg"
+                   alt="Nội thất nhà thờ Chính thống giáo với iconostasis và tranh tường" loading="lazy">
+            </div>
             <div class="article-copy">
               <div class="article-tags">
                 <span>Thần học</span>
@@ -783,6 +826,7 @@
               <h3><a href="#bai-viet">Thần học về ánh sáng và sự biến đổi tâm hồn</a></h3>
               <p>Một khảo sát nhập môn về cầu nguyện, chiêm niệm và truyền thống Hesychasm.</p>
               <div class="article-meta">Bài viết mẫu · 8 phút đọc</div>
+              <small class="image-credit">Ảnh: Farquhar82 · <a href="https://commons.wikimedia.org/wiki/File:ChurchInterior.jpg" target="_blank" rel="noopener">Wikimedia Commons · CC0</a></small>
             </div>
           </article>
 
