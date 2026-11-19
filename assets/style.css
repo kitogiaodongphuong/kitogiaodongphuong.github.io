@@ -856,3 +856,11 @@ h1, h2, h3, h4, .brand-name {
 /* Trong thân bài viết, tiêu đề phụ giữ chữ nhỏ hơn một chút cho cân đối */
 .post-body h2 { font-size: 27px; }
 .post-body h3 { font-size: 22px; }
+
+/* Các chú thích nhỏ trong bài viết in nghiêng */
+.post .meta,
+.post figcaption,
+.post .image-credit,
+.post-body .khung .khung-nguon {
+  font-style: italic;
+}
