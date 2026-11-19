@@ -8,7 +8,6 @@ featured: true
 image: https://commons.wikimedia.org/wiki/Special:FilePath/Simonopetra_Monastery%2C_Mount_Athos.jpg
 image_alt: Tu viện Simonopetra xây dựng trên vách đá ở núi Athos
 image_caption: Tu viện Simonopetra · Núi Athos, Hy Lạp
-image_credit: 'Ảnh: Angelos @ Ottawa · <a href="https://commons.wikimedia.org/wiki/File:Simonopetra_Monastery,_Mount_Athos.jpg" target="_blank" rel="noopener">Wikimedia Commons · CC0</a>'
 ---
 
 Trong truyền thống Kitô giáo Đông phương, đời sống cầu nguyện không chỉ được hiểu như một thực hành đạo đức, mà còn gắn liền với hành trình biến đổi đời sống con người. Khi tìm hiểu về thánh Grêgôriô Palamás, chúng ta có dịp tiếp cận một trong những chủ đề quan trọng của truyền thống thần học Byzantine: mối tương quan giữa Thiên Chúa và con người trong kinh nghiệm cầu nguyện và chiêm niệm.
