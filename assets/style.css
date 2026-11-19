@@ -837,3 +837,8 @@ img[hidden] { display: none !important; }
 @media (max-width: 700px) {
   .post-body table { display: block; overflow-x: auto; }
 }
+
+/* Chân trang luôn nằm sát đáy, kể cả khi trang ngắn */
+body { min-height: 100vh; display: flex; flex-direction: column; }
+body > main { flex: 1 0 auto; width: 100%; }
+body > footer { flex-shrink: 0; margin-top: auto; }
