@@ -1,0 +1,19 @@
+{
+  "name": "Thư viện tri thức và tư liệu Kitô giáo Đông phương",
+  "short": "Thư viện Kitô giáo Đông phương",
+  "tagline": "Tìm hiểu · Suy tư · Đồng hành",
+  "description": "Thư viện tri thức và tư liệu Kitô giáo Đông phương.",
+  "url": "https://kitogiaodongphuong.github.io",
+  "quote": "Tìm hiểu, gìn giữ và chia sẻ di sản tri thức Kitô giáo Đông phương.",
+  "footer": "Một dự án độc lập, không đại diện chính thức cho bất kỳ Giáo hội nào.",
+  "categories": [
+    { "slug": "lich-su-giao-hoi", "name": "Lịch sử Giáo hội" },
+    { "slug": "than-hoc", "name": "Thần học" },
+    { "slug": "giao-phu-va-truyen-thong", "name": "Giáo phụ và truyền thống" },
+    { "slug": "phung-vu-va-bi-tich", "name": "Phụng vụ và bí tích" },
+    { "slug": "linh-dao", "name": "Linh đạo và đời sống thiêng liêng" },
+    { "slug": "nghe-thuat-va-van-hoa", "name": "Nghệ thuật và văn hóa" },
+    { "slug": "tu-lieu-va-dich-thuat", "name": "Tư liệu và dịch thuật" },
+    { "slug": "tan-mac", "name": "Tản mạn và góc nhìn cá nhân" }
+  ]
+}

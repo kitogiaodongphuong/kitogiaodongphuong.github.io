@@ -1,14 +1,3 @@
-
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Thư viện tri thức và tư liệu Kitô giáo Đông phương.">
-  <meta name="theme-color" content="#263a35">
-  <title>Thư viện Kitô giáo Đông phương</title>
-
-  <style>
     :root {
       --paper: #f3f0e8;
       --surface: #faf8f2;
@@ -259,12 +248,6 @@
       background: linear-gradient(0deg, rgba(29,42,34,.56), transparent 65%);
     }
 
-    .hero-art svg {
-      position: relative;
-      width: 88%;
-      max-width: 440px;
-      height: auto;
-    }
 
     .hero-art-note {
       position: absolute;
@@ -694,256 +677,101 @@
         scroll-behavior: auto;
       }
     }
-  </style>
-</head>
 
-<body>
+/* ===== Bổ sung cho bản Jekyll-free (Node build) ===== */
 
-  <header class="top-header">
-    <div class="container header-inner">
-      <a class="brand" href="#trang-chu">
-        <div class="brand-mark" aria-hidden="true">✝</div>
-        <div>
-          <h1 class="brand-name">Thư viện tri thức và tư liệu<br>Kitô giáo Đông phương</h1>
-          <p class="brand-tagline">Tìm hiểu · Suy tư · Đồng hành</p>
-        </div>
-      </a>
+.search-box { position: relative; }
 
-      <div class="header-tools">
-        <label class="search-box">
-          <input id="searchInput" type="search" placeholder="Tìm kiếm..." aria-label="Tìm kiếm">
-          <span aria-hidden="true">⌕</span>
-        </label>
-        <button class="theme-button" id="themeButton" type="button" aria-label="Đổi giao diện">◐</button>
-        <button class="menu-button" id="menuButton" type="button" aria-label="Mở menu">☰</button>
-      </div>
-    </div>
-  </header>
+.search-results {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  z-index: 20;
+  max-height: 340px;
+  overflow: auto;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.14);
+}
+.search-results[hidden] { display: none; }
+.search-results a {
+  display: block;
+  padding: 9px 12px;
+  border-bottom: 1px solid var(--line);
+  font-size: 13px;
+  line-height: 1.45;
+}
+.search-results a:last-child { border-bottom: 0; }
+.search-results a:hover { background: var(--green-light); }
+.search-results small { display: block; color: var(--muted); font-size: 11px; }
+.search-results .none { padding: 12px; color: var(--muted); font-size: 13px; }
+@media (min-width: 761px) { .search-results { width: 340px; left: auto; } }
 
-  <div class="mobile-search">
-    <div class="container">
-      <label class="search-box">
-        <input id="mobileSearchInput" type="search" placeholder="Tìm kiếm bài viết..." aria-label="Tìm kiếm bài viết">
-        <span aria-hidden="true">⌕</span>
-      </label>
-    </div>
-  </div>
+.nav-links a[aria-current="page"] { text-decoration: underline; text-underline-offset: 6px; }
 
-  <nav class="navigation" aria-label="Điều hướng chính">
-    <div class="container nav-inner">
-      <div class="nav-links" id="navLinks">
-        <a href="#trang-chu">Trang chủ</a>
-        <a href="#bai-viet">Bài viết</a>
-        <a href="#chuyen-muc">Chuyên mục</a>
-        <a href="#thuat-ngu">Thuật ngữ</a>
-        <a href="#tac-gia">Tác giả</a>
-        <a href="#gioi-thieu">Giới thiệu</a>
-      </div>
-    </div>
-  </nav>
+.category-count { margin-left: auto; color: var(--muted); font-size: 12px; }
+.page-intro { color: var(--muted); }
 
-  <main id="trang-chu">
+.hero-art-note { z-index: 2; }
+.article-art img[hidden], .hero-photo[hidden] { display: none; }
 
-    <section class="hero">
-      <div class="container hero-inner">
+/* Trang bài viết và trang tĩnh */
+.post {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 46px 24px 80px;
+}
+.post .back, .post .back-bottom a { color: var(--red); font-size: 14px; }
+.post-category {
+  margin-top: 34px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+.post-category a { color: var(--red); }
+.post h1 {
+  margin: 12px 0 16px;
+  font-size: clamp(30px, 5.5vw, 48px);
+  line-height: 1.2;
+  letter-spacing: -.03em;
+}
+.post .subtitle { max-width: 700px; margin: 0; color: var(--muted); font-size: 18px; line-height: 1.7; }
+.post .meta {
+  margin: 22px 0 28px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 13px;
+}
+.post-figure { margin: 0 0 34px; }
+.post-figure img { display: block; width: 100%; max-height: 460px; object-fit: cover; }
+.post-body { font-size: 18px; line-height: 1.85; }
+.post-body h2 { margin: 46px 0 14px; font-size: 26px; line-height: 1.35; }
+.post-body h3 { margin: 34px 0 10px; font-size: 21px; }
+.post-body p { margin: 0 0 20px; }
+.post-body a { color: var(--red); text-decoration: underline; text-underline-offset: 3px; }
+.post-body img { max-width: 100%; height: auto; }
+.post-body blockquote {
+  margin: 32px 0;
+  padding: 4px 24px;
+  border-left: 3px solid var(--gold);
+  color: var(--red);
+  font-size: 19px;
+  font-style: italic;
+}
+.post-body blockquote p { margin: 12px 0; }
+.post-body ul, .post-body ol { padding-left: 26px; margin: 0 0 20px; }
+.post-body hr { border: 0; border-top: 1px solid var(--line); margin: 40px 0; }
+.post-tags { margin-top: 36px; }
+.back-bottom { margin-top: 44px; }
+.glossary-full { display: grid; gap: 16px; margin-top: 24px; }
+.glossary-full .glossary-panel { margin-top: 0; }
 
-        <div class="hero-copy">
-          <span class="eyebrow">Bài viết nổi bật</span>
-          <h2><a href="bai-viet.html">Thánh Grêgôriô Palamás và thần học chiêm niệm</a></h2>
-          <p>
-            Tìm hiểu đời sống, tư tưởng và di sản thần học của một vị thánh
-            quan trọng trong truyền thống Kitô giáo Đông phương.
-          </p>
-          <a class="primary-link" href="bai-viet.html">Khám phá bài viết →</a>
-        </div>
-
-        <div class="hero-art" role="img" aria-label="Tu viện Simonopetra trên núi Athos, Hy Lạp">
-          <img class="hero-photo"
-               src="https://commons.wikimedia.org/wiki/Special:FilePath/Simonopetra_Monastery%2C_Mount_Athos.jpg"
-               alt="Tu viện Simonopetra xây dựng trên vách đá ở núi Athos"
-               loading="eager"
-               fetchpriority="high">
-          <span class="hero-art-note">Tu viện Simonopetra · Núi Athos, Hy Lạp</span>
-        </div>
-
-      </div>
-    </section>
-
-    <div class="container content-layout">
-
-      <section id="bai-viet">
-        <div class="section-heading">
-          <h2>Bài viết mới nhất</h2>
-          <a class="more-link" href="#bai-viet">Xem tất cả →</a>
-        </div>
-
-        <div class="article-list" id="articleList">
-
-          <article class="article-card" data-search="núi athos chính thống giáo lịch sử tu viện hy lạp">
-            <div class="article-art">
-              <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Simonopetra_Monastery%2C_Mount_Athos.jpg"
-                   alt="Tu viện Simonopetra trên núi Athos" loading="lazy">
-            </div>
-            <div class="article-copy">
-              <div class="article-tags">
-                <span>Lịch sử Giáo hội</span>
-                <span>Giáo phụ và truyền thống</span>
-              </div>
-              <h3><a href="#bai-viet">Núi Athos – trái tim thiêng liêng của Chính thống giáo</a></h3>
-              <p>Một hành trình khám phá lịch sử, đời sống tu trì và ý nghĩa thiêng liêng của Núi Athos.</p>
-              <div class="article-meta">Bài viết mẫu · 12 phút đọc</div>
-              <small class="image-credit">Ảnh: Angelos @ Ottawa · <a href="https://commons.wikimedia.org/wiki/File:Simonopetra_Monastery,_Mount_Athos.jpg" target="_blank" rel="noopener">Wikimedia Commons · CC0</a></small>
-            </div>
-          </article>
-
-          <article class="article-card" data-search="thánh thể phụng vụ bí tích kitô giáo đông phương">
-            <div class="article-art second">
-              <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Christ_Pantocrator_icon.jpg"
-                   alt="Thánh tượng Chúa Kitô Pantokrator" loading="lazy">
-            </div>
-            <div class="article-copy">
-              <div class="article-tags">
-                <span>Phụng vụ và bí tích</span>
-                <span>Linh đạo</span>
-              </div>
-              <h3><a href="#bai-viet">Ý nghĩa của Thánh Thể trong truyền thống Đông phương</a></h3>
-              <p>Từ phụng vụ cổ đại đến đời sống thiêng liêng của cộng đoàn Kitô hữu hôm nay.</p>
-              <div class="article-meta">Bài viết mẫu · 10 phút đọc</div>
-              <small class="image-credit">Thánh tượng: <a href="https://commons.wikimedia.org/wiki/File:Christ_Pantocrator_icon.jpg" target="_blank" rel="noopener">Wikimedia Commons · Phạm vi công cộng</a></small>
-            </div>
-          </article>
-
-          <article class="article-card" data-search="giáo phụ thần học grêgôriô palamas hesychasm">
-            <div class="article-art third">
-              <img src="https://commons.wikimedia.org/wiki/Special:FilePath/ChurchInterior.jpg"
-                   alt="Nội thất nhà thờ Chính thống giáo với iconostasis và tranh tường" loading="lazy">
-            </div>
-            <div class="article-copy">
-              <div class="article-tags">
-                <span>Thần học</span>
-                <span>Giáo phụ và truyền thống</span>
-              </div>
-              <h3><a href="#bai-viet">Thần học về ánh sáng và sự biến đổi tâm hồn</a></h3>
-              <p>Một khảo sát nhập môn về cầu nguyện, chiêm niệm và truyền thống Hesychasm.</p>
-              <div class="article-meta">Bài viết mẫu · 8 phút đọc</div>
-              <small class="image-credit">Ảnh: Farquhar82 · <a href="https://commons.wikimedia.org/wiki/File:ChurchInterior.jpg" target="_blank" rel="noopener">Wikimedia Commons · CC0</a></small>
-            </div>
-          </article>
-
-        </div>
-
-        <p class="no-results" id="noResults">Không tìm thấy bài viết phù hợp.</p>
-
-        <section class="glossary-panel" id="thuat-ngu">
-          <div class="section-heading">
-            <h2>Thuật ngữ đáng chú ý</h2>
-            <a class="more-link" href="#thuat-ngu">Xem tất cả →</a>
-          </div>
-          <p class="glossary-term">Hesychasm</p>
-          <p class="glossary-original">Ἡσυχασμός · Lối sống tĩnh lặng</p>
-          <p>Truyền thống cầu nguyện và đời sống chiêm niệm, hướng đến sự kết hiệp với Thiên Chúa.</p>
-        </section>
-      </section>
-
-      <aside>
-        <section id="chuyen-muc">
-          <div class="section-heading">
-            <h2>Chuyên mục</h2>
-          </div>
-
-          <ul class="category-list">
-            <li><a href="#bai-viet"><span class="category-number">01</span>Lịch sử Giáo hội</a></li>
-            <li><a href="#bai-viet"><span class="category-number">02</span>Thần học</a></li>
-            <li><a href="#bai-viet"><span class="category-number">03</span>Giáo phụ và truyền thống</a></li>
-            <li><a href="#bai-viet"><span class="category-number">04</span>Phụng vụ và bí tích</a></li>
-            <li><a href="#bai-viet"><span class="category-number">05</span>Linh đạo và đời sống thiêng liêng</a></li>
-            <li><a href="#bai-viet"><span class="category-number">06</span>Nghệ thuật và văn hóa</a></li>
-            <li><a href="#bai-viet"><span class="category-number">07</span>Tư liệu và dịch thuật</a></li>
-            <li><a href="#bai-viet"><span class="category-number">08</span>Tản mạn và góc nhìn cá nhân</a></li>
-          </ul>
-        </section>
-
-        <div class="independent-note">
-          “Tìm hiểu, gìn giữ và chia sẻ di sản tri thức Kitô giáo Đông phương.”
-        </div>
-      </aside>
-
-    </div>
-  </main>
-
-  <footer id="gioi-thieu">
-    <div class="container footer-inner">
-      <p>
-        Thư viện tri thức và tư liệu Kitô giáo Đông phương<br>
-        Một dự án độc lập, không đại diện chính thức cho bất kỳ Giáo hội nào.
-      </p>
-      <div class="footer-links">
-        <a href="#gioi-thieu">Giới thiệu</a>
-        <a href="#tac-gia">Tác giả</a>
-        <a href="#trang-chu">Đầu trang ↑</a>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    // Chuyển giao diện sáng và tối
-    const themeButton = document.getElementById("themeButton");
-
-    themeButton.addEventListener("click", () => {
-      document.body.classList.toggle("dark");
-      themeButton.textContent =
-        document.body.classList.contains("dark") ? "☀" : "◐";
-    });
-
-    // Menu điện thoại
-    const navLinks = document.getElementById("navLinks");
-    const menuButton = document.getElementById("menuButton");
-
-    menuButton.addEventListener("click", () => {
-      navLinks.classList.toggle("open");
-    });
-
-    navLinks.querySelectorAll("a").forEach(link => {
-      link.addEventListener("click", () => {
-        navLinks.classList.remove("open");
-      });
-    });
-
-    // Tìm kiếm bài viết
-    const searchInput = document.getElementById("searchInput");
-    const mobileSearchInput = document.getElementById("mobileSearchInput");
-    const articles = document.querySelectorAll(".article-card");
-    const noResults = document.getElementById("noResults");
-
-    function searchArticles(value) {
-      const query = value.trim().toLocaleLowerCase("vi");
-      let visibleCount = 0;
-
-      articles.forEach(article => {
-        const text = (
-          article.innerText + " " + article.dataset.search
-        ).toLocaleLowerCase("vi");
-
-        const matches = text.includes(query);
-        article.style.display = matches ? "grid" : "none";
-
-        if (matches) visibleCount++;
-      });
-
-      noResults.style.display =
-        visibleCount === 0 ? "block" : "none";
-    }
-
-    searchInput.addEventListener("input", () => {
-      mobileSearchInput.value = searchInput.value;
-      searchArticles(searchInput.value);
-    });
-
-    mobileSearchInput.addEventListener("input", () => {
-      searchInput.value = mobileSearchInput.value;
-      searchArticles(mobileSearchInput.value);
-    });
-  </script>
-
-</body>
-</html>
+@media (max-width: 600px) {
+  .post { padding: 32px 18px 60px; }
+  .post-body { font-size: 17px; }
+}
+img[hidden] { display: none !important; }
