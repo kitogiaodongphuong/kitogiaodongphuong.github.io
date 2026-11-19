@@ -27,8 +27,7 @@
       margin: 0;
       background: var(--paper);
       color: var(--ink);
-      font-family: "Baskerville SFU", "Gentium Plus", Georgia,
-        "Times New Roman", serif;
+      font-family: "Times New Roman", "Liberation Serif", Tinos, Times, serif;
       font-size: 17px;
       line-height: 1.65;
       letter-spacing: normal;
@@ -753,7 +752,7 @@
 }
 .post-figure { margin: 0 0 34px; }
 .post-figure img { display: block; width: 100%; max-height: 460px; object-fit: cover; }
-.post-body { font-size: 19px; line-height: 1.85; }
+.post-body { font-size: 20px; line-height: 1.9; }
 .post-body h2 { margin: 46px 0 14px; font-size: 26px; line-height: 1.35; }
 .post-body h3 { margin: 34px 0 10px; font-size: 21px; }
 .post-body p { margin: 0 0 20px; }
@@ -777,7 +776,7 @@
 
 @media (max-width: 600px) {
   .post { padding: 32px 18px 60px; }
-  .post-body { font-size: 17px; }
+  .post-body { font-size: 18px; }
 }
 img[hidden] { display: none !important; }
 
@@ -849,3 +848,11 @@ body > main { flex: 1 0 auto; width: 100%; }
 body > footer { flex-shrink: 0; margin-top: auto; }
 
 .independent-note .quote-ref { display: block; margin-top: 10px; font-size: 14px; font-style: normal; letter-spacing: 0.04em; opacity: .8; }
+
+/* Tiêu đề dùng Baskerville, nội dung dùng Times New Roman */
+h1, h2, h3, h4, .brand-name {
+  font-family: "Baskerville SFU", "Times New Roman", "Liberation Serif", Georgia, serif;
+}
+/* Trong thân bài viết, tiêu đề phụ giữ chữ nhỏ hơn một chút cho cân đối */
+.post-body h2 { font-size: 27px; }
+.post-body h3 { font-size: 22px; }
