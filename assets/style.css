@@ -86,11 +86,8 @@
       width: 58px;
       height: 58px;
       flex-shrink: 0;
-      display: grid;
-      place-items: center;
-      border: 1px solid var(--gold);
-      color: var(--red);
-      font-size: 37px;
+      display: block;
+      object-fit: contain;
     }
 
     .brand-name {
@@ -560,7 +557,6 @@
       .brand-mark {
         width: 43px;
         height: 43px;
-        font-size: 29px;
       }
 
       .brand-name {

@@ -92,7 +92,12 @@ function layout({ title, desc, body, url = "/", ogImage }) {
   <meta property="og:description" content="${esc(desc || site.description)}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="${site.url}${url}">
-  ${ogImage ? `<meta property="og:image" content="${esc(ogImage)}">` : ""}
+  <meta property="og:image" content="${esc(ogImage || site.url + "/assets/og-default.jpg")}">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="${site.url}${url}">
+  <link rel="icon" href="/assets/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
   <link rel="alternate" type="application/rss+xml" title="${esc(site.short)}" href="/feed.xml">
   <link rel="stylesheet" href="/assets/style.css">
   <title>${esc(fullTitle)}</title>
@@ -103,7 +108,7 @@ function layout({ title, desc, body, url = "/", ogImage }) {
   <header class="top-header">
     <div class="container header-inner">
       <a class="brand" href="/">
-        <div class="brand-mark" aria-hidden="true">✝</div>
+        <img class="brand-mark" src="/assets/logo.png" alt="Biểu trưng Thư viện tri thức và tư liệu Kitô giáo Đông phương" width="58" height="58">
         <div>
           <p class="brand-name">Thư viện tri thức và tư liệu<br>Kitô giáo Đông phương</p>
           <p class="brand-tagline">${esc(site.tagline)}</p>
@@ -433,5 +438,28 @@ write(
 // Chép thư mục assets
 fs.cpSync(path.join(ROOT, "assets"), path.join(OUT, "assets"), { recursive: true });
 fs.writeFileSync(path.join(OUT, ".nojekyll"), "");
+
+// Sơ đồ trang và robots.txt
+const sitemapUrls = [];
+(function walk(dir) {
+  for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
+    const full = path.join(dir, e.name);
+    if (e.isDirectory()) walk(full);
+    else if (e.name === "index.html") {
+      const rel = path.relative(OUT, dir).split(path.sep).join("/");
+      sitemapUrls.push(rel ? `/${rel}/` : "/");
+    }
+  }
+})(OUT);
+sitemapUrls.sort();
+write(
+  "sitemap.xml",
+  `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${sitemapUrls.map((u) => `<url><loc>${site.url}${u}</loc></url>`).join("\n")}
+</urlset>
+`
+);
+write("robots.txt", `User-agent: *\nAllow: /\n\nSitemap: ${site.url}/sitemap.xml\n`);
 
 console.log(`Đã dựng ${posts.length} bài viết, ${site.categories.length} chuyên mục.`);
