@@ -4,7 +4,8 @@
   "tagline": "Tìm hiểu · Suy tư · Đồng hành",
   "description": "Thư viện tri thức và tư liệu Kitô giáo Đông phương.",
   "url": "https://kitogiaodongphuong.github.io",
-  "quote": "Tìm hiểu, gìn giữ và chia sẻ di sản tri thức Kitô giáo Đông phương.",
+  "quote": "Những điều tôi đã thành tâm học hỏi được, xin truyền đạt hết…",
+  "quoteRef": "Kn 7,13",
   "footer": "Một dự án độc lập, không đại diện chính thức cho bất kỳ Giáo hội nào.",
   "categories": [
     { "slug": "lich-su-giao-hoi", "name": "Lịch sử Giáo hội" },

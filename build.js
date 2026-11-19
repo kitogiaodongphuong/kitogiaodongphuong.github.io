@@ -192,7 +192,7 @@ function sidebar() {
           <div class="section-heading"><h2>Chuyên mục</h2></div>
           ${categoryList()}
         </section>
-        <div class="independent-note">“${esc(site.quote)}”</div>
+        <div class="independent-note">“${esc(site.quote)}”${site.quoteRef ? `<span class="quote-ref">${esc(site.quoteRef)}</span>` : ""}</div>
       </aside>`;
 }
 
@@ -292,7 +292,7 @@ write(
         <div class="section-heading"><h2>Chuyên mục</h2></div>
         ${categoryList()}
       </section>
-      <aside><div class="independent-note">“${esc(site.quote)}”</div></aside>
+      <aside><div class="independent-note">“${esc(site.quote)}”${site.quoteRef ? `<span class="quote-ref">${esc(site.quoteRef)}</span>` : ""}</div></aside>
     </div>
   </main>`,
   })
