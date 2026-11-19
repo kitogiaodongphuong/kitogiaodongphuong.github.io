@@ -38,7 +38,7 @@ Bất đồng thứ hai liên quan đến vị trí của Đức Giáo hoàng tr
 
 Quan niệm này không được phía Đông phương tiếp nhận theo cùng một cách. Trong truyền thống Byzantine, sự hiệp nhất Giáo hội được thể hiện qua sự hiệp thông giữa các Giáo hội địa phương và thẩm quyền của các Công đồng chung. Các tòa thượng phụ duy trì đời sống quản trị riêng, trong một cơ cấu mang tính hiệp đoàn, chứ không đặt toàn bộ quyền cai quản dưới một giám mục duy nhất. Vì thế, điều mà Rôma xem là sự thực thi quyền kế vị thánh Phêrô lại có thể được Constantinople nhìn nhận như một sự mở rộng quyền bính vượt quá giới hạn truyền thống.
 
-Giám mục đô thành Kallistos Ware, một trong những học giả Chính Thống giáo có ảnh hưởng trong thời hiện đại, cũng đặc biệt nhấn mạnh hai bất đồng này khi phân tích nguồn gốc cuộc Đại Ly giáo. Tuy nhiên, cần lưu ý rằng những khác biệt về thần học và giáo hội học không tồn tại biệt lập. Chúng đan xen với những biến động chính trị, văn hóa và những tổn thương tích tụ qua nhiều thế hệ.
+Giám mục Kallistos Ware, một trong những học giả Chính Thống giáo có ảnh hưởng trong thời hiện đại, cũng đặc biệt nhấn mạnh hai bất đồng này khi phân tích nguồn gốc cuộc Đại Ly giáo. Tuy nhiên, cần lưu ý rằng những khác biệt về thần học và giáo hội học không tồn tại biệt lập. Chúng đan xen với những biến động chính trị, văn hóa và những tổn thương tích tụ qua nhiều thế hệ.
 
 <figure class="post-figure"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Icon_with_the_Deesis_MET_sf17-190-133s2.jpg?width=900" alt="Phiến ngà Byzantine mô tả cảnh Deesis" loading="lazy"><figcaption class="image-credit">Phiến ngà Byzantine thế kỷ X mô tả cảnh Deesis: một nét đẹp của nghệ thuật Kitô giáo Đông phương.</figcaption></figure>
 
@@ -82,7 +82,7 @@ Năm 1453, Constantinople thất thủ trước quân Ottoman, đánh dấu sự
 
 ## Năm 1965: khởi đầu của một hành trình hòa giải
 
-Phải gần chín thế kỷ sau biến cố năm 1054, một cử chỉ hòa giải mang ý nghĩa lịch sử mới được thực hiện. Năm 1964, Đức Giáo hoàng Phaolô VI và Đức Thượng Phụ Đại kết Athenagoras gặp nhau tại Giêrusalem. Cuộc gặp gỡ này đánh dấu bước ngoặt quan trọng trong quan hệ giữa Giáo hội Công giáo Rôma và Chính Thống giáo, mở ra một giai đoạn đối thoại mới sau nhiều thế kỷ xa cách.
+Phải gần chín thế kỷ sau biến cố năm 1054, một cử chỉ hòa giải mang ý nghĩa lịch sử mới được thực hiện. Năm 1964, Đức Giáo hoàng Phaolô VI và Đức Thượng Phụ Athenagoras gặp nhau tại Giêrusalem. Cuộc gặp gỡ này đánh dấu bước ngoặt quan trọng trong quan hệ giữa Giáo hội Công giáo Rôma và Chính Thống giáo, mở ra một giai đoạn đối thoại mới sau nhiều thế kỷ xa cách.
 
 Ngày 7 tháng 12 năm 1965, hai vị cùng công bố một tuyên ngôn chung, được đọc đồng thời tại Rôma và Constantinople, nay là Istanbul. Qua văn kiện này, hai bên bày tỏ sự tiếc nuối đối với những lời nói và hành động gây tổn thương trong biến cố năm 1054, đồng thời quyết định loại bỏ khỏi ký ức Giáo hội những vạ tuyệt thông liên quan đến các nhân vật của cuộc đối đầu ấy.
 
@@ -98,4 +98,4 @@ Có lẽ bài học sâu sắc nhất từ cuộc gặp gỡ năm 1965 nằm ở
 
 Sau gần một nghìn năm, câu hỏi quan trọng không chỉ là ai đã đặt tờ giấy xuống bàn thờ Hagia Sophia năm 1054, nhưng còn là liệu những người mang cùng một đức tin có đủ khiêm tốn, kiên nhẫn và tình huynh đệ để tìm lại con đường hiệp thông hay không.
 
-Để tìm hiểu sâu hơn về chủ đề này, độc giả có thể tham khảo các tác phẩm của Giám mục đô thành Kallistos Ware về lịch sử và linh đạo Chính Thống giáo, những nghiên cứu lịch sử của Steven Runciman, cùng bản Tuyên ngôn chung Công giáo – Chính Thống giáo ngày 7 tháng 12 năm 1965 được công bố bởi Tòa Thánh.
+Để tìm hiểu sâu hơn về chủ đề này, độc giả có thể tham khảo các tác phẩm của Giám mục Kallistos Ware về lịch sử và linh đạo Chính Thống giáo, những nghiên cứu lịch sử của Steven Runciman, cùng bản Tuyên ngôn chung Công giáo – Chính Thống giáo ngày 7 tháng 12 năm 1965 được công bố bởi Tòa Thánh.
