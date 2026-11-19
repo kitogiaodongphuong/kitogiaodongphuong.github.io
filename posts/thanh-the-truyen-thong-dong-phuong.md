@@ -5,7 +5,7 @@ category: Phụng vụ và bí tích
 tags: [Phụng vụ và bí tích, Linh đạo]
 summary: Từ phụng vụ cổ đại đến đời sống thiêng liêng của cộng đoàn Kitô hữu hôm nay.
 image: https://commons.wikimedia.org/wiki/Special:FilePath/Christ_Pantocrator_icon.jpg
-image_alt: Thánh tượng Chúa Kitô Pantokrator
+image_alt: Linh ảnh Chúa Kitô Pantokrator
 ---
 
 *Bài viết mẫu. Nội dung sẽ được bổ sung.*
