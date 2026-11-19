@@ -1,0 +1,891 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Thư viện tri thức và tư liệu Kitô giáo Đông phương. Tìm hiểu lịch sử, thần học, giáo phụ, phụng vụ và linh đạo Đông phương.">
+  <meta name="theme-color" content="#263a35">
+  <title>Thư viện tri thức và tư liệu Kitô giáo Đông phương</title>
+
+  <style>
+    :root {
+      --paper: #f3f0e8;
+      --paper-light: #faf8f2;
+      --ink: #292820;
+      --muted: #716e63;
+      --green: #263a35;
+      --green-light: #e4e9e1;
+      --red: #783f3f;
+      --gold: #b8a987;
+      --line: #ded8ca;
+      --shadow: 0 10px 35px rgba(41, 40, 32, 0.07);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Arial, "Noto Sans", sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    body.dark {
+      --paper: #1e2724;
+      --paper-light: #26312c;
+      --ink: #eee9dc;
+      --muted: #c0b9a9;
+      --green: #19231f;
+      --green-light: #35443b;
+      --red: #c78d82;
+      --gold: #b8a987;
+      --line: #414b43;
+      --shadow: 0 10px 35px rgba(0, 0, 0, 0.18);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button, input {
+      font: inherit;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    .container {
+      width: min(1160px, calc(100% - 48px));
+      margin: 0 auto;
+    }
+
+    .serif {
+      font-family: Georgia, "Noto Serif", "Times New Roman", serif;
+    }
+
+    /* Đầu trang */
+
+    .top-header {
+      background: var(--paper-light);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .header-inner {
+      min-height: 116px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 28px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 17px;
+      min-width: 0;
+    }
+
+    .brand-mark {
+      width: 62px;
+      height: 62px;
+      flex: 0 0 62px;
+      display: grid;
+      place-items: center;
+      border: 1px solid var(--gold);
+      color: var(--red);
+      font-family: Georgia, serif;
+      font-size: 42px;
+      line-height: 1;
+      transform: rotate(45deg);
+    }
+
+    .brand-mark span {
+      transform: rotate(-45deg);
+    }
+
+    .brand-name {
+      margin: 0;
+      font-family: Georgia, "Noto Serif", serif;
+      font-size: clamp(19px, 2.5vw, 27px);
+      line-height: 1.22;
+      font-weight: 600;
+    }
+
+    .brand-tagline {
+      margin: 5px 0 0;
+      color: var(--muted);
+      font-family: Georgia, serif;
+      font-style: italic;
+      font-size: 15px;
+    }
+
+    .header-tools {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .search-box {
+      width: 220px;
+      display: flex;
+      align-items: center;
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      padding: 7px 10px;
+      background: var(--paper);
+    }
+
+    .search-box input {
+      width: 100%;
+      min-width: 0;
+      border: 0;
+      outline: 0;
+      background: transparent;
+      color: var(--ink);
+      font-size: 14px;
+    }
+
+    .search-box span {
+      color: var(--muted);
+    }
+
+    .theme-button, .menu-button {
+      border: 1px solid var(--line);
+      background: transparent;
+      color: var(--ink);
+      border-radius: 4px;
+      padding: 8px 11px;
+    }
+
+    /* Điều hướng */
+
+    .navigation {
+      background: var(--green);
+      color: #f8f5eb;
+    }
+
+    .nav-inner {
+      min-height: 46px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .nav-links a {
+      padding: 10px 0;
+      font-size: 14px;
+      transition: opacity 0.2s;
+    }
+
+    .nav-links a:hover {
+      opacity: 0.7;
+    }
+
+    .menu-button {
+      display: none;
+      color: #fff;
+      border-color: rgba(255,255,255,0.3);
+    }
+
+    /* Bài viết nổi bật */
+
+    .hero {
+      background: var(--paper-light);
+      border-bottom: 1px solid var(--line);
+      overflow: hidden;
+    }
+
+    .hero-inner {
+      min-height: 390px;
+      display: grid;
+      grid-template-columns: 1fr 0.95fr;
+      align-items: stretch;
+    }
+
+    .hero-copy {
+      padding: 58px 45px 48px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    .eyebrow {
+      color: var(--red);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1.3px;
+      text-transform: uppercase;
+    }
+
+    .hero h2 {
+      max-width: 540px;
+      margin: 12px 0 16px;
+      font-family: Georgia, "Noto Serif", serif;
+      font-size: clamp(32px, 4vw, 46px);
+      line-height: 1.14;
+      font-weight: 600;
+    }
+
+    .hero-copy p {
+      max-width: 500px;
+      margin: 0 0 24px;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .primary-link {
+      display: inline-block;
+      padding: 10px 20px;
+      background: var(--red);
+      color: #fff;
+      border-radius: 3px;
+      font-size: 14px;
+    }
+
+    .hero-art {
+      min-height: 390px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background:
+        radial-gradient(ellipse at 50% 35%, #bca36f 0, #8e805a 34%, transparent 35%),
+        linear-gradient(155deg, #d2c19b, #897d60 58%, #4c5a4b);
+    }
+
+    .hero-art::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(0deg, rgba(29, 42, 34, 0.56), transparent 65%);
+    }
+
+    .hero-art svg {
+      position: relative;
+      width: 88%;
+      max-width: 440px;
+      height: auto;
+      filter: drop-shadow(0 10px 12px rgba(0,0,0,0.2));
+    }
+
+    .hero-art-note {
+      position: absolute;
+      bottom: 17px;
+      right: 20px;
+      color: #fff8e8;
+      font-family: Georgia, serif;
+      font-style: italic;
+      font-size: 13px;
+    }
+
+    /* Khu vực nội dung */
+
+    .content-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.6fr) minmax(260px, 0.9fr);
+      gap: 38px;
+      padding-top: 38px;
+      padding-bottom: 54px;
+    }
+
+    .section-heading {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 22px;
+      padding-bottom: 11px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .section-heading h2 {
+      margin: 0;
+      font-family: Georgia, "Noto Serif", serif;
+      font-size: 25px;
+      font-weight: 600;
+      line-height: 1.3;
+    }
+
+    .section-heading h2::before {
+      content: "";
+      display: inline-block;
+      width: 4px;
+      height: 23px;
+      margin-right: 12px;
+      background: var(--red);
+      vertical-align: -3px;
+    }
+
+    .more-link {
+      color: var(--red);
+      font-size: 13px;
+      white-space: nowrap;
+    }
+
+    /* Danh sách bài viết */
+
+    .article-list {
+      display: grid;
+      gap: 22px;
+    }
+
+    .article-card {
+      display: grid;
+      grid-template-columns: 190px minmax(0, 1fr);
+      gap: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .article-art {
+      min-height: 136px;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      background: linear-gradient(145deg, #c8bea2, #777f69);
+      color: #fff7e7;
+      font-family: Georgia, serif;
+      font-size: 46px;
+    }
+
+    .article-art.second {
+      background: linear-gradient(145deg, #8b7659, #3a493d);
+    }
+
+    .article-art.third {
+      background: linear-gradient(145deg, #a78d73, #6e5149);
+    }
+
+    .article-copy h3 {
+      margin: 4px 0 7px;
+      font-family: Georgia, "Noto Serif", serif;
+      font-size: 21px;
+      line-height: 1.3;
+      font-weight: 600;
+    }
+
+    .article-copy p {
+      margin: 0 0 9px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.65;
+    }
+
+    .article-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .article-tags span {
+      padding: 2px 8px;
+      border-radius: 2px;
+      background: var(--green-light);
+      color: var(--green);
+      font-size: 11px;
+    }
+
+    .article-meta {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .no-results {
+      display: none;
+      padding: 20px;
+      border: 1px dashed var(--line);
+      color: var(--muted);
+      text-align: center;
+    }
+
+    /* Chuyên mục */
+
+    .category-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .category-list li {
+      border-bottom: 1px solid var(--line);
+    }
+
+    .category-list a {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      padding: 10px 2px;
+      font-size: 14px;
+    }
+
+    .category-number {
+      width: 25px;
+      color: var(--red);
+      font-family: Georgia, serif;
+      font-size: 14px;
+    }
+
+    /* Thuật ngữ */
+
+    .glossary-panel {
+      margin-top: 32px;
+      padding: 20px;
+      background: var(--paper-light);
+      border: 1px solid var(--line);
+    }
+
+    .glossary-panel h2 {
+      margin: 0 0 12px;
+      font-family: Georgia, serif;
+      font-size: 21px;
+    }
+
+    .glossary-term {
+      margin: 0;
+      font-family: Georgia, serif;
+      font-size: 19px;
+      font-weight: 600;
+    }
+
+    .glossary-original {
+      color: var(--red);
+      font-size: 14px;
+    }
+
+    .glossary-panel p:last-child {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .independent-note {
+      margin-top: 24px;
+      padding: 24px;
+      border-left: 3px solid var(--gold);
+      background: var(--green-light);
+      font-family: Georgia, serif;
+      font-style: italic;
+      text-align: center;
+    }
+
+    /* Chân trang */
+
+    footer {
+      padding: 28px 0;
+      background: var(--green);
+      color: #f5f1e5;
+    }
+
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      font-size: 13px;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    /* Điện thoại và máy tính bảng */
+
+    @media (max-width: 760px) {
+      .container {
+        width: min(100% - 32px, 580px);
+      }
+
+      .header-inner {
+        min-height: 85px;
+        gap: 10px;
+      }
+
+      .brand {
+        gap: 10px;
+      }
+
+      .brand-mark {
+        width: 43px;
+        height: 43px;
+        flex-basis: 43px;
+        font-size: 30px;
+      }
+
+      .brand-name {
+        font-size: 17px;
+      }
+
+      .brand-tagline {
+        font-size: 12px;
+      }
+
+      .header-tools {
+        gap: 6px;
+      }
+
+      .search-box {
+        display: none;
+      }
+
+      .theme-button {
+        padding: 6px 9px;
+      }
+
+      .menu-button {
+        display: inline-block;
+      }
+
+      .nav-inner {
+        min-height: 0;
+        display: block;
+      }
+
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 5px 0 12px;
+      }
+
+      .nav-links.open {
+        display: flex;
+      }
+
+      .nav-links a {
+        padding: 9px 0;
+        border-bottom: 1px solid rgba(255,255,255,0.13);
+      }
+
+      .nav-inner > .menu-button {
+        margin: 8px 0;
+      }
+
+      .hero-inner {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-copy {
+        padding: 35px 0 32px;
+      }
+
+      .hero h2 {
+        font-size: 34px;
+      }
+
+      .hero-art {
+        min-height: 225px;
+      }
+
+      .content-layout {
+        grid-template-columns: 1fr;
+        gap: 36px;
+        padding-top: 30px;
+      }
+
+      .article-card {
+        grid-template-columns: 110px minmax(0, 1fr);
+        gap: 13px;
+      }
+
+      .article-art {
+        min-height: 110px;
+        font-size: 34px;
+      }
+
+      .article-copy h3 {
+        font-size: 17px;
+      }
+
+      .article-copy p {
+        font-size: 13px;
+      }
+
+      .section-heading h2 {
+        font-size: 22px;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    @media (max-width: 390px) {
+      .brand-name {
+        font-size: 15px;
+      }
+
+      .article-card {
+        grid-template-columns: 88px minmax(0, 1fr);
+      }
+
+      .article-art {
+        min-height: 95px;
+      }
+
+      .article-copy h3 {
+        font-size: 15px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *, *::before, *::after {
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="top-header">
+    <div class="container header-inner">
+      <a class="brand" href="#trang-chu" aria-label="Trang chủ">
+        <div class="brand-mark" aria-hidden="true"><span>✝</span></div>
+        <div>
+          <h1 class="brand-name">Thư viện tri thức và tư liệu<br>Kitô giáo Đông phương</h1>
+          <p class="brand-tagline">Tìm hiểu · Suy tư · Đồng hành</p>
+        </div>
+      </a>
+
+      <div class="header-tools">
+        <label class="search-box">
+          <input id="searchInput" type="search" placeholder="Tìm kiếm..." aria-label="Tìm kiếm bài viết">
+          <span aria-hidden="true">⌕</span>
+        </label>
+        <button class="theme-button" id="themeButton" type="button" aria-label="Đổi giao diện sáng tối">◐</button>
+        <button class="menu-button" id="menuButton" type="button" aria-label="Mở menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="navigation" aria-label="Điều hướng chính">
+    <div class="container nav-inner">
+      <button class="menu-button" id="mobileMenuButton" type="button" aria-label="Mở menu">☰ Menu</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#trang-chu">Trang chủ</a>
+        <a href="#bai-viet">Bài viết</a>
+        <a href="#chuyen-muc">Chuyên mục</a>
+        <a href="#thuat-ngu">Thuật ngữ</a>
+        <a href="#tac-gia">Tác giả</a>
+        <a href="#gioi-thieu">Giới thiệu</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="trang-chu">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <span class="eyebrow">Bài viết nổi bật</span>
+          <h2>Thánh Grêgôriô Palamás và thần học chiêm niệm</h2>
+          <p>
+            Tìm hiểu đời sống, tư tưởng và di sản thần học của một vị thánh
+            quan trọng trong truyền thống Kitô giáo Đông phương.
+          </p>
+          <a class="primary-link" href="#bai-viet">Khám phá bài viết →</a>
+        </div>
+
+        <div class="hero-art" role="img" aria-label="Hình minh họa kiến trúc tu viện Đông phương">
+          <svg viewBox="0 0 500 350" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="250" cy="145" r="106" fill="#d1b56f" opacity=".75"/>
+            <circle cx="250" cy="145" r="91" fill="none" stroke="#f2e4bc" stroke-width="3"/>
+            <path d="M35 310 L75 255 L115 275 L165 215 L210 250 L250 205 L305 255 L350 220 L410 270 L465 235 L500 290 L500 350 L35 350Z" fill="#34483b"/>
+            <g fill="#e9d9b6" stroke="#604e39" stroke-width="3">
+              <path d="M135 258 V178 H194 V258Z"/>
+              <path d="M125 178 L164 140 L204 178Z"/>
+              <path d="M151 140 Q164 94 177 140Z"/>
+              <path d="M224 258 V155 H298 V258Z"/>
+              <path d="M214 155 L261 112 L308 155Z"/>
+              <path d="M246 112 Q261 56 276 112Z"/>
+              <path d="M328 258 V190 H381 V258Z"/>
+              <path d="M318 190 L354 151 L391 190Z"/>
+              <path d="M342 151 Q354 108 366 151Z"/>
+            </g>
+            <g stroke="#604e39" stroke-width="4" fill="none">
+              <path d="M261 42 V76 M248 53 H274 M253 64 H269"/>
+              <path d="M164 82 V104 M153 92 H175"/>
+              <path d="M354 96 V119 M343 106 H365"/>
+            </g>
+            <g fill="#604e39">
+              <path d="M151 258 V217 Q164 198 177 217 V258Z"/>
+              <path d="M246 258 V210 Q261 188 276 210 V258Z"/>
+              <path d="M342 258 V222 Q354 205 366 222 V258Z"/>
+            </g>
+          </svg>
+          <span class="hero-art-note">Truyền thống và di sản Đông phương</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="container content-layout">
+      <section id="bai-viet">
+        <div class="section-heading">
+          <h2>Bài viết mới nhất</h2>
+          <a class="more-link" href="#bai-viet">Xem tất cả →</a>
+        </div>
+
+        <div class="article-list" id="articleList">
+          <article class="article-card" data-search="núi athos chính thống giáo lịch sử tu viện hy lạp">
+            <div class="article-art" aria-hidden="true">⌂</div>
+            <div class="article-copy">
+              <div class="article-tags">
+                <span>Lịch sử Giáo hội</span>
+                <span>Giáo phụ và truyền thống</span>
+              </div>
+              <h3><a href="#bai-viet">Núi Athos – trái tim thiêng liêng của Chính thống giáo</a></h3>
+              <p>Một hành trình khám phá lịch sử, đời sống tu trì và ý nghĩa thiêng liêng của Núi Athos.</p>
+              <div class="article-meta">Bài viết mẫu · 12 phút đọc</div>
+            </div>
+          </article>
+
+          <article class="article-card" data-search="thánh thể phụng vụ bí tích kitô giáo đông phương">
+            <div class="article-art second" aria-hidden="true">✝</div>
+            <div class="article-copy">
+              <div class="article-tags">
+                <span>Phụng vụ và bí tích</span>
+                <span>Linh đạo</span>
+              </div>
+              <h3><a href="#bai-viet">Ý nghĩa của Thánh Thể trong truyền thống Đông phương</a></h3>
+              <p>Từ phụng vụ cổ đại đến đời sống thiêng liêng của cộng đoàn Kitô hữu hôm nay.</p>
+              <div class="article-meta">Bài viết mẫu · 10 phút đọc</div>
+            </div>
+          </article>
+
+          <article class="article-card" data-search="giáo phụ thần học grêgôriô palamas hesychasm">
+            <div class="article-art third" aria-hidden="true">✥</div>
+            <div class="article-copy">
+              <div class="article-tags">
+                <span>Thần học</span>
+                <span>Giáo phụ và truyền thống</span>
+              </div>
+              <h3><a href="#bai-viet">Thần học về ánh sáng và sự biến đổi tâm hồn</a></h3>
+              <p>Một khảo sát nhập môn về cầu nguyện, chiêm niệm và truyền thống Hesychasm.</p>
+              <div class="article-meta">Bài viết mẫu · 8 phút đọc</div>
+            </div>
+          </article>
+        </div>
+
+        <p class="no-results" id="noResults">Không tìm thấy bài viết phù hợp.</p>
+
+        <section class="glossary-panel" id="thuat-ngu">
+          <div class="section-heading">
+            <h2>Thuật ngữ đáng chú ý</h2>
+            <a class="more-link" href="#thuat-ngu">Xem tất cả →</a>
+          </div>
+          <p class="glossary-term">Hesychasm</p>
+          <p class="glossary-original">Ἡσυχασμός · Lối sống tĩnh lặng</p>
+          <p>Truyền thống cầu nguyện và đời sống chiêm niệm, hướng đến sự kết hiệp với Thiên Chúa.</p>
+        </section>
+      </section>
+
+      <aside>
+        <section id="chuyen-muc">
+          <div class="section-heading">
+            <h2>Chuyên mục</h2>
+          </div>
+          <ul class="category-list">
+            <li><a href="#bai-viet"><span class="category-number">01</span>Lịch sử Giáo hội</a></li>
+            <li><a href="#bai-viet"><span class="category-number">02</span>Thần học</a></li>
+            <li><a href="#bai-viet"><span class="category-number">03</span>Giáo phụ và truyền thống</a></li>
+            <li><a href="#bai-viet"><span class="category-number">04</span>Phụng vụ và bí tích</a></li>
+            <li><a href="#bai-viet"><span class="category-number">05</span>Linh đạo và đời sống thiêng liêng</a></li>
+            <li><a href="#bai-viet"><span class="category-number">06</span>Nghệ thuật và văn hóa</a></li>
+            <li><a href="#bai-viet"><span class="category-number">07</span>Tư liệu và dịch thuật</a></li>
+            <li><a href="#bai-viet"><span class="category-number">08</span>Tản mạn và góc nhìn cá nhân</a></li>
+          </ul>
+        </section>
+
+        <div class="independent-note">
+          “Tìm hiểu, gìn giữ và chia sẻ di sản tri thức Kitô giáo Đông phương.”
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer id="gioi-thieu">
+    <div class="container footer-inner">
+      <p>Thư viện tri thức và tư liệu Kitô giáo Đông phương<br>Một dự án độc lập, phi lợi nhuận.</p>
+      <div class="footer-links">
+        <a href="#gioi-thieu">Giới thiệu</a>
+        <a href="#tac-gia">Tác giả</a>
+        <a href="#trang-chu">Đầu trang ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Chuyển đổi giao diện sáng và tối
+    const themeButton = document.getElementById("themeButton");
+    themeButton.addEventListener("click", () => {
+      document.body.classList.toggle("dark");
+      themeButton.textContent = document.body.classList.contains("dark") ? "☀" : "◐";
+    });
+
+    // Mở và đóng menu trên điện thoại
+    const navLinks = document.getElementById("navLinks");
+    const menuButton = document.getElementById("menuButton");
+    const mobileMenuButton = document.getElementById("mobileMenuButton");
+
+    function toggleMenu() {
+      navLinks.classList.toggle("open");
+    }
+
+    menuButton.addEventListener("click", toggleMenu);
+    mobileMenuButton.addEventListener("click", toggleMenu);
+
+    navLinks.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => navLinks.classList.remove("open"));
+    });
+
+    // Tìm kiếm các bài viết đang hiển thị trên trang chủ
+    const searchInput = document.getElementById("searchInput");
+    const articles = document.querySelectorAll(".article-card");
+    const noResults = document.getElementById("noResults");
+
+    searchInput.addEventListener("input", () => {
+      const query = searchInput.value.trim().toLocaleLowerCase("vi");
+      let visibleCount = 0;
+
+      articles.forEach(article => {
+        const text = (article.innerText + " " + article.dataset.search)
+          .toLocaleLowerCase("vi");
+        const matches = text.includes(query);
+
+        article.style.display = matches ? "grid" : "none";
+        if (matches) visibleCount++;
+      });
+
+      noResults.style.display = visibleCount === 0 ? "block" : "none";
+    });
+  </script>
+</body>
+</html>
