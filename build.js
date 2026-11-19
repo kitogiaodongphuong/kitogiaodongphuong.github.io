@@ -427,7 +427,7 @@ write(
 // Địa chỉ cũ của bài Palamás
 write(
   "bai-viet.html",
-  `<!DOCTYPE html><html lang="vi"><meta charset="UTF-8"><meta http-equiv="refresh" content="0; url=/bai-viet/thanh-gregorio-palamas/"><link rel="canonical" href="${site.url}/bai-viet/thanh-gregorio-palamas/"><title>Đang chuyển trang…</title><a href="/bai-viet/thanh-gregorio-palamas/">Bấm vào đây nếu trang không tự chuyển.</a></html>`
+  `<!DOCTYPE html><html lang="vi"><meta charset="UTF-8"><meta http-equiv="refresh" content="0; url=/bai-viet/"><link rel="canonical" href="${site.url}/bai-viet/"><title>Đang chuyển trang…</title><a href="/bai-viet/">Bấm vào đây nếu trang không tự chuyển.</a></html>`
 );
 
 // Chép thư mục assets
