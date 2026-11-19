@@ -4,14 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Thư viện tri thức và tư liệu Kitô giáo Đông phương. Tìm hiểu lịch sử, thần học, giáo phụ, phụng vụ và linh đạo Đông phương.">
+  <meta name="description" content="Thư viện tri thức và tư liệu Kitô giáo Đông phương.">
   <meta name="theme-color" content="#263a35">
-  <title>Thư viện tri thức và tư liệu Kitô giáo Đông phương</title>
+  <title>Thư viện Kitô giáo Đông phương</title>
 
   <style>
     :root {
       --paper: #f3f0e8;
-      --paper-light: #faf8f2;
+      --surface: #faf8f2;
       --ink: #292820;
       --muted: #716e63;
       --green: #263a35;
@@ -19,7 +19,6 @@
       --red: #783f3f;
       --gold: #b8a987;
       --line: #ded8ca;
-      --shadow: 0 10px 35px rgba(41, 40, 32, 0.07);
     }
 
     * {
@@ -34,14 +33,18 @@
       margin: 0;
       background: var(--paper);
       color: var(--ink);
-      font-family: Arial, "Noto Sans", sans-serif;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Arial, sans-serif;
       font-size: 16px;
-      line-height: 1.7;
+      line-height: 1.65;
+      letter-spacing: normal;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
     }
 
     body.dark {
       --paper: #1e2724;
-      --paper-light: #26312c;
+      --surface: #26312c;
       --ink: #eee9dc;
       --muted: #c0b9a9;
       --green: #19231f;
@@ -49,7 +52,6 @@
       --red: #c78d82;
       --gold: #b8a987;
       --line: #414b43;
-      --shadow: 0 10px 35px rgba(0, 0, 0, 0.18);
     }
 
     a {
@@ -70,79 +72,65 @@
       margin: 0 auto;
     }
 
-    .serif {
-      font-family: Georgia, "Noto Serif", "Times New Roman", serif;
-    }
-
     /* Đầu trang */
 
     .top-header {
-      background: var(--paper-light);
+      background: var(--surface);
       border-bottom: 1px solid var(--line);
     }
 
     .header-inner {
-      min-height: 116px;
+      min-height: 112px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 28px;
+      gap: 24px;
     }
 
     .brand {
       display: flex;
       align-items: center;
       gap: 17px;
-      min-width: 0;
     }
 
     .brand-mark {
-      width: 62px;
-      height: 62px;
-      flex: 0 0 62px;
+      width: 58px;
+      height: 58px;
+      flex-shrink: 0;
       display: grid;
       place-items: center;
       border: 1px solid var(--gold);
       color: var(--red);
-      font-family: Georgia, serif;
-      font-size: 42px;
-      line-height: 1;
-      transform: rotate(45deg);
-    }
-
-    .brand-mark span {
-      transform: rotate(-45deg);
+      font-size: 37px;
     }
 
     .brand-name {
       margin: 0;
-      font-family: Georgia, "Noto Serif", serif;
-      font-size: clamp(19px, 2.5vw, 27px);
-      line-height: 1.22;
-      font-weight: 600;
+      font-size: clamp(19px, 2.5vw, 26px);
+      line-height: 1.3;
+      font-weight: 700;
     }
 
     .brand-tagline {
       margin: 5px 0 0;
       color: var(--muted);
-      font-family: Georgia, serif;
-      font-style: italic;
-      font-size: 15px;
+      font-size: 14px;
     }
 
     .header-tools {
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 10px;
     }
 
     .search-box {
-      width: 220px;
+      width: 225px;
       display: flex;
       align-items: center;
+      gap: 8px;
+      padding: 8px 11px;
       border: 1px solid var(--line);
-      border-radius: 4px;
-      padding: 7px 10px;
+      border-radius: 3px;
       background: var(--paper);
     }
 
@@ -156,19 +144,20 @@
       font-size: 14px;
     }
 
-    .search-box span {
-      color: var(--muted);
-    }
-
-    .theme-button, .menu-button {
+    .theme-button,
+    .menu-button {
+      padding: 8px 11px;
       border: 1px solid var(--line);
+      border-radius: 3px;
       background: transparent;
       color: var(--ink);
-      border-radius: 4px;
-      padding: 8px 11px;
     }
 
-    /* Điều hướng */
+    .menu-button {
+      display: none;
+    }
+
+    /* Thanh điều hướng */
 
     .navigation {
       background: var(--green);
@@ -179,7 +168,6 @@
       min-height: 46px;
       display: flex;
       align-items: center;
-      justify-content: space-between;
     }
 
     .nav-links {
@@ -191,36 +179,27 @@
     .nav-links a {
       padding: 10px 0;
       font-size: 14px;
-      transition: opacity 0.2s;
     }
 
     .nav-links a:hover {
-      opacity: 0.7;
-    }
-
-    .menu-button {
-      display: none;
-      color: #fff;
-      border-color: rgba(255,255,255,0.3);
+      opacity: .7;
     }
 
     /* Bài viết nổi bật */
 
     .hero {
-      background: var(--paper-light);
+      background: var(--surface);
       border-bottom: 1px solid var(--line);
-      overflow: hidden;
     }
 
     .hero-inner {
       min-height: 390px;
       display: grid;
-      grid-template-columns: 1fr 0.95fr;
-      align-items: stretch;
+      grid-template-columns: 1fr .95fr;
     }
 
     .hero-copy {
-      padding: 58px 45px 48px 0;
+      padding: 55px 42px 48px 0;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
@@ -229,35 +208,36 @@
 
     .eyebrow {
       color: var(--red);
-      font-size: 13px;
+      font-size: 12px;
       font-weight: 700;
-      letter-spacing: 1.3px;
+      letter-spacing: 1px;
       text-transform: uppercase;
     }
 
     .hero h2 {
-      max-width: 540px;
-      margin: 12px 0 16px;
-      font-family: Georgia, "Noto Serif", serif;
-      font-size: clamp(32px, 4vw, 46px);
-      line-height: 1.14;
-      font-weight: 600;
+      max-width: 550px;
+      margin: 13px 0 16px;
+      font-size: clamp(30px, 4vw, 43px);
+      line-height: 1.2;
+      font-weight: 750;
+      letter-spacing: -.7px;
     }
 
     .hero-copy p {
       max-width: 500px;
       margin: 0 0 24px;
       color: var(--muted);
-      font-size: 16px;
+      font-size: 15px;
     }
 
     .primary-link {
       display: inline-block;
-      padding: 10px 20px;
+      padding: 10px 19px;
       background: var(--red);
-      color: #fff;
+      color: white;
       border-radius: 3px;
       font-size: 14px;
+      font-weight: 600;
     }
 
     .hero-art {
@@ -276,7 +256,7 @@
       content: "";
       position: absolute;
       inset: 0;
-      background: linear-gradient(0deg, rgba(29, 42, 34, 0.56), transparent 65%);
+      background: linear-gradient(0deg, rgba(29,42,34,.56), transparent 65%);
     }
 
     .hero-art svg {
@@ -284,7 +264,6 @@
       width: 88%;
       max-width: 440px;
       height: auto;
-      filter: drop-shadow(0 10px 12px rgba(0,0,0,0.2));
     }
 
     .hero-art-note {
@@ -292,16 +271,14 @@
       bottom: 17px;
       right: 20px;
       color: #fff8e8;
-      font-family: Georgia, serif;
-      font-style: italic;
-      font-size: 13px;
+      font-size: 12px;
     }
 
-    /* Khu vực nội dung */
+    /* Nội dung chính */
 
     .content-layout {
       display: grid;
-      grid-template-columns: minmax(0, 1.6fr) minmax(260px, 0.9fr);
+      grid-template-columns: minmax(0, 1.6fr) minmax(260px, .9fr);
       gap: 38px;
       padding-top: 38px;
       padding-bottom: 54px;
@@ -311,26 +288,25 @@
       display: flex;
       align-items: baseline;
       justify-content: space-between;
-      gap: 16px;
-      margin-bottom: 22px;
+      gap: 14px;
+      margin-bottom: 21px;
       padding-bottom: 11px;
       border-bottom: 1px solid var(--line);
     }
 
     .section-heading h2 {
       margin: 0;
-      font-family: Georgia, "Noto Serif", serif;
-      font-size: 25px;
-      font-weight: 600;
-      line-height: 1.3;
+      font-size: 23px;
+      font-weight: 700;
+      line-height: 1.4;
     }
 
     .section-heading h2::before {
       content: "";
       display: inline-block;
       width: 4px;
-      height: 23px;
-      margin-right: 12px;
+      height: 21px;
+      margin-right: 11px;
       background: var(--red);
       vertical-align: -3px;
     }
@@ -345,26 +321,24 @@
 
     .article-list {
       display: grid;
-      gap: 22px;
+      gap: 20px;
     }
 
     .article-card {
       display: grid;
-      grid-template-columns: 190px minmax(0, 1fr);
-      gap: 20px;
-      padding-bottom: 20px;
+      grid-template-columns: 175px minmax(0, 1fr);
+      gap: 19px;
+      padding-bottom: 19px;
       border-bottom: 1px solid var(--line);
     }
 
     .article-art {
-      min-height: 136px;
+      min-height: 135px;
       display: grid;
       place-items: center;
-      overflow: hidden;
       background: linear-gradient(145deg, #c8bea2, #777f69);
-      color: #fff7e7;
-      font-family: Georgia, serif;
-      font-size: 46px;
+      color: white;
+      font-size: 43px;
     }
 
     .article-art.second {
@@ -376,18 +350,21 @@
     }
 
     .article-copy h3 {
-      margin: 4px 0 7px;
-      font-family: Georgia, "Noto Serif", serif;
-      font-size: 21px;
-      line-height: 1.3;
-      font-weight: 600;
+      margin: 6px 0 7px;
+      font-size: 19px;
+      line-height: 1.4;
+      font-weight: 700;
+    }
+
+    .article-copy h3 a:hover {
+      color: var(--red);
     }
 
     .article-copy p {
       margin: 0 0 9px;
       color: var(--muted);
       font-size: 14px;
-      line-height: 1.65;
+      line-height: 1.6;
     }
 
     .article-tags {
@@ -397,7 +374,7 @@
     }
 
     .article-tags span {
-      padding: 2px 8px;
+      padding: 3px 8px;
       border-radius: 2px;
       background: var(--green-light);
       color: var(--green);
@@ -437,11 +414,14 @@
       font-size: 14px;
     }
 
+    .category-list a:hover {
+      color: var(--red);
+    }
+
     .category-number {
       width: 25px;
       color: var(--red);
-      font-family: Georgia, serif;
-      font-size: 14px;
+      font-size: 13px;
     }
 
     /* Thuật ngữ */
@@ -449,21 +429,20 @@
     .glossary-panel {
       margin-top: 32px;
       padding: 20px;
-      background: var(--paper-light);
+      background: var(--surface);
       border: 1px solid var(--line);
     }
 
     .glossary-panel h2 {
-      margin: 0 0 12px;
-      font-family: Georgia, serif;
+      margin: 0;
       font-size: 21px;
+      font-weight: 700;
     }
 
     .glossary-term {
-      margin: 0;
-      font-family: Georgia, serif;
+      margin: 18px 0 4px;
       font-size: 19px;
-      font-weight: 600;
+      font-weight: 700;
     }
 
     .glossary-original {
@@ -479,18 +458,18 @@
 
     .independent-note {
       margin-top: 24px;
-      padding: 24px;
+      padding: 23px;
       border-left: 3px solid var(--gold);
       background: var(--green-light);
-      font-family: Georgia, serif;
-      font-style: italic;
       text-align: center;
+      color: var(--ink);
+      font-size: 14px;
     }
 
     /* Chân trang */
 
     footer {
-      padding: 28px 0;
+      padding: 27px 0;
       background: var(--green);
       color: #f5f1e5;
     }
@@ -512,7 +491,21 @@
       gap: 20px;
     }
 
-    /* Điện thoại và máy tính bảng */
+    /* Tìm kiếm trên điện thoại */
+
+    .mobile-search {
+      display: none;
+      padding: 12px 0;
+      background: var(--surface);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .mobile-search .search-box {
+      display: flex;
+      width: 100%;
+    }
+
+    /* Responsive */
 
     @media (max-width: 760px) {
       .container {
@@ -520,7 +513,7 @@
       }
 
       .header-inner {
-        min-height: 85px;
+        min-height: 84px;
         gap: 10px;
       }
 
@@ -531,28 +524,19 @@
       .brand-mark {
         width: 43px;
         height: 43px;
-        flex-basis: 43px;
-        font-size: 30px;
+        font-size: 29px;
       }
 
       .brand-name {
-        font-size: 17px;
+        font-size: 16px;
       }
 
       .brand-tagline {
         font-size: 12px;
       }
 
-      .header-tools {
-        gap: 6px;
-      }
-
-      .search-box {
+      .header-tools .search-box {
         display: none;
-      }
-
-      .theme-button {
-        padding: 6px 9px;
       }
 
       .menu-button {
@@ -560,8 +544,8 @@
       }
 
       .nav-inner {
-        min-height: 0;
         display: block;
+        padding: 7px 0;
       }
 
       .nav-links {
@@ -569,7 +553,6 @@
         flex-direction: column;
         align-items: stretch;
         gap: 0;
-        padding: 5px 0 12px;
       }
 
       .nav-links.open {
@@ -577,12 +560,12 @@
       }
 
       .nav-links a {
-        padding: 9px 0;
-        border-bottom: 1px solid rgba(255,255,255,0.13);
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(255,255,255,.13);
       }
 
-      .nav-inner > .menu-button {
-        margin: 8px 0;
+      .mobile-search {
+        display: block;
       }
 
       .hero-inner {
@@ -590,15 +573,15 @@
       }
 
       .hero-copy {
-        padding: 35px 0 32px;
+        padding: 34px 0;
       }
 
       .hero h2 {
-        font-size: 34px;
+        font-size: 31px;
       }
 
       .hero-art {
-        min-height: 225px;
+        min-height: 230px;
       }
 
       .content-layout {
@@ -614,11 +597,11 @@
 
       .article-art {
         min-height: 110px;
-        font-size: 34px;
+        font-size: 33px;
       }
 
       .article-copy h3 {
-        font-size: 17px;
+        font-size: 16px;
       }
 
       .article-copy p {
@@ -626,7 +609,7 @@
       }
 
       .section-heading h2 {
-        font-size: 22px;
+        font-size: 20px;
       }
 
       .footer-inner {
@@ -637,11 +620,11 @@
 
     @media (max-width: 390px) {
       .brand-name {
-        font-size: 15px;
+        font-size: 14px;
       }
 
       .article-card {
-        grid-template-columns: 88px minmax(0, 1fr);
+        grid-template-columns: 90px minmax(0, 1fr);
       }
 
       .article-art {
@@ -657,19 +640,16 @@
       html {
         scroll-behavior: auto;
       }
-
-      *, *::before, *::after {
-        transition: none !important;
-      }
     }
   </style>
 </head>
 
 <body>
+
   <header class="top-header">
     <div class="container header-inner">
-      <a class="brand" href="#trang-chu" aria-label="Trang chủ">
-        <div class="brand-mark" aria-hidden="true"><span>✝</span></div>
+      <a class="brand" href="#trang-chu">
+        <div class="brand-mark" aria-hidden="true">✝</div>
         <div>
           <h1 class="brand-name">Thư viện tri thức và tư liệu<br>Kitô giáo Đông phương</h1>
           <p class="brand-tagline">Tìm hiểu · Suy tư · Đồng hành</p>
@@ -678,18 +658,26 @@
 
       <div class="header-tools">
         <label class="search-box">
-          <input id="searchInput" type="search" placeholder="Tìm kiếm..." aria-label="Tìm kiếm bài viết">
+          <input id="searchInput" type="search" placeholder="Tìm kiếm..." aria-label="Tìm kiếm">
           <span aria-hidden="true">⌕</span>
         </label>
-        <button class="theme-button" id="themeButton" type="button" aria-label="Đổi giao diện sáng tối">◐</button>
+        <button class="theme-button" id="themeButton" type="button" aria-label="Đổi giao diện">◐</button>
         <button class="menu-button" id="menuButton" type="button" aria-label="Mở menu">☰</button>
       </div>
     </div>
   </header>
 
+  <div class="mobile-search">
+    <div class="container">
+      <label class="search-box">
+        <input id="mobileSearchInput" type="search" placeholder="Tìm kiếm bài viết..." aria-label="Tìm kiếm bài viết">
+        <span aria-hidden="true">⌕</span>
+      </label>
+    </div>
+  </div>
+
   <nav class="navigation" aria-label="Điều hướng chính">
     <div class="container nav-inner">
-      <button class="menu-button" id="mobileMenuButton" type="button" aria-label="Mở menu">☰ Menu</button>
       <div class="nav-links" id="navLinks">
         <a href="#trang-chu">Trang chủ</a>
         <a href="#bai-viet">Bài viết</a>
@@ -702,8 +690,10 @@
   </nav>
 
   <main id="trang-chu">
+
     <section class="hero">
       <div class="container hero-inner">
+
         <div class="hero-copy">
           <span class="eyebrow">Bài viết nổi bật</span>
           <h2>Thánh Grêgôriô Palamás và thần học chiêm niệm</h2>
@@ -714,7 +704,7 @@
           <a class="primary-link" href="#bai-viet">Khám phá bài viết →</a>
         </div>
 
-        <div class="hero-art" role="img" aria-label="Hình minh họa kiến trúc tu viện Đông phương">
+        <div class="hero-art" role="img" aria-label="Minh họa kiến trúc tu viện Đông phương">
           <svg viewBox="0 0 500 350" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <circle cx="250" cy="145" r="106" fill="#d1b56f" opacity=".75"/>
             <circle cx="250" cy="145" r="91" fill="none" stroke="#f2e4bc" stroke-width="3"/>
@@ -743,10 +733,12 @@
           </svg>
           <span class="hero-art-note">Truyền thống và di sản Đông phương</span>
         </div>
+
       </div>
     </section>
 
     <div class="container content-layout">
+
       <section id="bai-viet">
         <div class="section-heading">
           <h2>Bài viết mới nhất</h2>
@@ -754,6 +746,7 @@
         </div>
 
         <div class="article-list" id="articleList">
+
           <article class="article-card" data-search="núi athos chính thống giáo lịch sử tu viện hy lạp">
             <div class="article-art" aria-hidden="true">⌂</div>
             <div class="article-copy">
@@ -792,6 +785,7 @@
               <div class="article-meta">Bài viết mẫu · 8 phút đọc</div>
             </div>
           </article>
+
         </div>
 
         <p class="no-results" id="noResults">Không tìm thấy bài viết phù hợp.</p>
@@ -812,6 +806,7 @@
           <div class="section-heading">
             <h2>Chuyên mục</h2>
           </div>
+
           <ul class="category-list">
             <li><a href="#bai-viet"><span class="category-number">01</span>Lịch sử Giáo hội</a></li>
             <li><a href="#bai-viet"><span class="category-number">02</span>Thần học</a></li>
@@ -828,12 +823,16 @@
           “Tìm hiểu, gìn giữ và chia sẻ di sản tri thức Kitô giáo Đông phương.”
         </div>
       </aside>
+
     </div>
   </main>
 
   <footer id="gioi-thieu">
     <div class="container footer-inner">
-      <p>Thư viện tri thức và tư liệu Kitô giáo Đông phương<br>Một dự án độc lập, phi lợi nhuận.</p>
+      <p>
+        Thư viện tri thức và tư liệu Kitô giáo Đông phương<br>
+        Một dự án độc lập, không đại diện chính thức cho bất kỳ Giáo hội nào.
+      </p>
       <div class="footer-links">
         <a href="#gioi-thieu">Giới thiệu</a>
         <a href="#tac-gia">Tác giả</a>
@@ -843,49 +842,64 @@
   </footer>
 
   <script>
-    // Chuyển đổi giao diện sáng và tối
+    // Chuyển giao diện sáng và tối
     const themeButton = document.getElementById("themeButton");
+
     themeButton.addEventListener("click", () => {
       document.body.classList.toggle("dark");
-      themeButton.textContent = document.body.classList.contains("dark") ? "☀" : "◐";
+      themeButton.textContent =
+        document.body.classList.contains("dark") ? "☀" : "◐";
     });
 
-    // Mở và đóng menu trên điện thoại
+    // Menu điện thoại
     const navLinks = document.getElementById("navLinks");
     const menuButton = document.getElementById("menuButton");
-    const mobileMenuButton = document.getElementById("mobileMenuButton");
 
-    function toggleMenu() {
+    menuButton.addEventListener("click", () => {
       navLinks.classList.toggle("open");
-    }
-
-    menuButton.addEventListener("click", toggleMenu);
-    mobileMenuButton.addEventListener("click", toggleMenu);
-
-    navLinks.querySelectorAll("a").forEach(link => {
-      link.addEventListener("click", () => navLinks.classList.remove("open"));
     });
 
-    // Tìm kiếm các bài viết đang hiển thị trên trang chủ
+    navLinks.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("open");
+      });
+    });
+
+    // Tìm kiếm bài viết
     const searchInput = document.getElementById("searchInput");
+    const mobileSearchInput = document.getElementById("mobileSearchInput");
     const articles = document.querySelectorAll(".article-card");
     const noResults = document.getElementById("noResults");
 
-    searchInput.addEventListener("input", () => {
-      const query = searchInput.value.trim().toLocaleLowerCase("vi");
+    function searchArticles(value) {
+      const query = value.trim().toLocaleLowerCase("vi");
       let visibleCount = 0;
 
       articles.forEach(article => {
-        const text = (article.innerText + " " + article.dataset.search)
-          .toLocaleLowerCase("vi");
-        const matches = text.includes(query);
+        const text = (
+          article.innerText + " " + article.dataset.search
+        ).toLocaleLowerCase("vi");
 
+        const matches = text.includes(query);
         article.style.display = matches ? "grid" : "none";
+
         if (matches) visibleCount++;
       });
 
-      noResults.style.display = visibleCount === 0 ? "block" : "none";
+      noResults.style.display =
+        visibleCount === 0 ? "block" : "none";
+    }
+
+    searchInput.addEventListener("input", () => {
+      mobileSearchInput.value = searchInput.value;
+      searchArticles(searchInput.value);
+    });
+
+    mobileSearchInput.addEventListener("input", () => {
+      searchInput.value = mobileSearchInput.value;
+      searchArticles(mobileSearchInput.value);
     });
   </script>
+
 </body>
 </html>
