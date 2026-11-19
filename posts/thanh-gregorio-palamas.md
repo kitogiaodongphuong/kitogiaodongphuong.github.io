@@ -4,7 +4,6 @@ date: 2026-11-19
 category: Thần học
 tags: [Thần học, Linh đạo]
 summary: Tìm hiểu đời sống, tư tưởng và di sản thần học của một vị thánh quan trọng trong truyền thống Kitô giáo Đông phương.
-featured: true
 image: https://commons.wikimedia.org/wiki/Special:FilePath/Simonopetra_Monastery%2C_Mount_Athos.jpg
 image_alt: Tu viện Simonopetra xây dựng trên vách đá ở núi Athos
 image_caption: Tu viện Simonopetra · Núi Athos, Hy Lạp
