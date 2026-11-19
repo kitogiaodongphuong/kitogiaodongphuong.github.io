@@ -864,3 +864,11 @@ h1, h2, h3, h4, .brand-name {
 .post-body .khung .khung-nguon {
   font-style: italic;
 }
+
+/* Các yếu tố nhỏ trong bài viết in nghiêng để không làm sao nhãng khi đọc */
+.post .meta,
+.post figcaption,
+.post .image-credit,
+.post-body .khung .khung-nguon {
+  font-style: italic;
+}
