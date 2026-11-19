@@ -145,14 +145,10 @@ ${body}
 
   <footer>
     <div class="container footer-inner">
-      <p>
-        ${esc(site.name)}<br>
-        ${esc(site.footer)}
-      </p>
+      <p>${esc(site.footer)}</p>
       <div class="footer-links">
         <a href="/gioi-thieu/">Giới thiệu</a>
-        <a href="/feed.xml">RSS</a>
-        <a href="#top">Đầu trang ↑</a>
+        <a href="mailto:kitogiaodongphuong@gmail.com">Liên hệ</a>
       </div>
     </div>
   </footer>
