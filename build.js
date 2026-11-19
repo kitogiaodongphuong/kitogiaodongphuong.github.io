@@ -7,6 +7,11 @@ const { marked } = require("marked");
 
 const ROOT = __dirname;
 const OUT = path.join(ROOT, "dist");
+// Gắn mã phiên bản vào CSS/JS để trình duyệt luôn tải bản mới sau mỗi lần cập nhật
+const crypto = require("crypto");
+const ver = (f) => crypto.createHash("md5").update(fs.readFileSync(path.join(ROOT, "assets", f))).digest("hex").slice(0, 8);
+const CSS_V = ver("style.css");
+const JS_V = ver("site.js");
 const site = JSON.parse(fs.readFileSync(path.join(ROOT, "site.json"), "utf8"));
 const glossary = JSON.parse(fs.readFileSync(path.join(ROOT, "data/thuat-ngu.json"), "utf8"));
 
@@ -99,7 +104,7 @@ function layout({ title, desc, body, url = "/", ogImage }) {
   <link rel="icon" type="image/png" href="/assets/favicon.png">
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
   <link rel="alternate" type="application/rss+xml" title="${esc(site.short)}" href="/feed.xml">
-  <link rel="stylesheet" href="/assets/style.css">
+  <link rel="stylesheet" href="/assets/style.css?v=${CSS_V}">
   <title>${esc(fullTitle)}</title>
 </head>
 <body>
@@ -152,7 +157,7 @@ ${body}
     </div>
   </footer>
 
-  <script src="/assets/site.js"></script>
+  <script src="/assets/site.js?v=${JS_V}"></script>
 </body>
 </html>
 `;
