@@ -37,3 +37,17 @@ Muốn ẩn một bài chưa xong, thêm dòng `draft: true`.
 - `data/thuat-ngu.json`: danh sách thuật ngữ.
 - `pages/gioi-thieu.md`: trang Giới thiệu.
 - `assets/style.css`: giao diện.
+
+## Khung nội dung bổ trợ trong bài
+
+Để chèn khung "Bối cảnh", "Thuật ngữ" hoặc "Tư liệu nguyên văn" vào giữa bài, dán đoạn sau (chừa dòng trống như mẫu). Loại khung đổi bằng chữ sau `khung`: để trống (Bối cảnh), `thuat-ngu` (Thuật ngữ) hoặc `tu-lieu` (Tư liệu).
+
+```
+<aside class="khung thuat-ngu">
+
+<p class="khung-nhan">Thuật ngữ</p>
+
+*Filioque* là cụm từ Latinh có nghĩa là “và từ Chúa Con”.
+
+</aside>
+```
