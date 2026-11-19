@@ -104,6 +104,8 @@ function layout({ title, desc, body, url = "/", ogImage }) {
   <link rel="icon" type="image/png" href="/assets/favicon.png">
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
   <link rel="alternate" type="application/rss+xml" title="${esc(site.short)}" href="/feed.xml">
+  <link rel="preload" href="/assets/fonts/baskerville-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/baskerville-medium.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/style.css?v=${CSS_V}">
   <title>${esc(fullTitle)}</title>
 </head>
