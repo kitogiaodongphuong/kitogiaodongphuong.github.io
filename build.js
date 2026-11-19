@@ -84,6 +84,10 @@ function searchBox(id) {
         </label>`;
 }
 
+function verseBlock() {
+  return `<figure class="verse"><blockquote>${esc(site.quote)}</blockquote>${site.quoteRef ? `<figcaption>${esc(site.quoteRef)}</figcaption>` : ""}</figure>`;
+}
+
 function layout({ title, desc, body, url = "/", ogImage }) {
   const fullTitle = title === site.name ? title : `${title} · ${site.short}`;
   return `<!DOCTYPE html>
@@ -193,7 +197,7 @@ function sidebar() {
           <div class="section-heading"><h2>Chuyên mục</h2></div>
           ${categoryList()}
         </section>
-        <div class="independent-note">“${esc(site.quote)}”${site.quoteRef ? `<span class="quote-ref">${esc(site.quoteRef)}</span>` : ""}</div>
+        ${verseBlock()}
       </aside>`;
 }
 
@@ -293,7 +297,7 @@ write(
         <div class="section-heading"><h2>Chuyên mục</h2></div>
         ${categoryList()}
       </section>
-      <aside><div class="independent-note">“${esc(site.quote)}”${site.quoteRef ? `<span class="quote-ref">${esc(site.quoteRef)}</span>` : ""}</div></aside>
+      <aside>${verseBlock()}</aside>
     </div>
   </main>`,
   })

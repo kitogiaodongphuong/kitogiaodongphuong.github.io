@@ -497,16 +497,6 @@
       font-size: 15px;
     }
 
-    .independent-note {
-      margin-top: 24px;
-      padding: 23px;
-      border-left: 3px solid var(--gold);
-      background: var(--green-light);
-      text-align: center;
-      color: var(--ink);
-      font-size: 15px;
-    }
-
     /* Chân trang */
 
     footer {
@@ -847,7 +837,6 @@ body { min-height: 100vh; display: flex; flex-direction: column; }
 body > main { flex: 1 0 auto; width: 100%; }
 body > footer { flex-shrink: 0; margin-top: auto; }
 
-.independent-note .quote-ref { display: block; margin-top: 10px; font-size: 14px; font-style: normal; letter-spacing: 0.04em; opacity: .8; }
 
 /* Tiêu đề dùng Baskerville, nội dung dùng Times New Roman */
 h1, h2, h3, h4, .brand-name {
@@ -872,3 +861,38 @@ h1, h2, h3, h4, .brand-name {
 .post-body .khung .khung-nguon {
   font-style: italic;
 }
+
+/* Khung lời trích Kinh Thánh ở trang chủ */
+.verse {
+  margin: 24px 0 0;
+  padding: 22px 26px 20px;
+  background: var(--surface);
+  border-top: 1px solid var(--gold);
+  border-bottom: 1px solid var(--gold);
+  text-align: center;
+}
+.verse blockquote {
+  margin: 0;
+  font-size: 20px;
+  font-style: italic;
+  line-height: 1.55;
+  color: var(--ink);
+  text-wrap: balance;
+}
+.verse blockquote::before {
+  content: "\201C";
+  display: block;
+  font-family: "Baskerville SFU", "Times New Roman", serif;
+  font-style: normal;
+  font-size: 46px;
+  line-height: 0.7;
+  height: 24px;
+  color: var(--gold);
+}
+.verse figcaption {
+  margin-top: 14px;
+  font-size: 15px;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+.verse figcaption::before { content: "— "; }
