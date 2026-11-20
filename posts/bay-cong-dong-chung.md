@@ -1,6 +1,6 @@
 ---
 title: Bảy Công đồng chung và nền tảng đức tin chung của Đông và Tây
-date: 2026-11-20
+date: 2026-11-20T22:17:00+07:00
 category: Lịch sử Giáo hội
 tags: [Thần học, Giáo phụ và truyền thống]
 summary: Từ Nicêa năm 325 đến Nicêa năm 787, bảy Công đồng chung đã định hình lời tuyên xưng về Ba Ngôi, về Chúa Kitô và về việc tôn kính linh ảnh. Các Công đồng ấy được triệu tập vì sao, và vì sao Công giáo cùng Chính Thống giáo vẫn xem đó là nền tảng chung?

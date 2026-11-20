@@ -11,7 +11,7 @@ Website: https://kitogiaodongphuong.github.io
 ```
 ---
 title: Tiêu đề bài viết
-date: 2026-11-25
+date: 2026-11-25   # có thể thêm giờ để xếp thứ tự các bài cùng ngày, ví dụ 2026-11-25T21:30:00+07:00
 category: Thần học
 tags: [Thần học, Linh đạo và đời sống thiêng liêng]
 summary: Một hai câu mô tả ngắn hiện ở trang chủ.

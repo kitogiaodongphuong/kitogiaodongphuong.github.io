@@ -1,6 +1,6 @@
 ---
 title: Theotokos và danh xưng Mẹ Thiên Chúa
-date: 2026-11-20
+date: 2026-11-20T22:43:00+07:00
 category: Thần học
 tags: [Giáo phụ và truyền thống, Phụng vụ và bí tích]
 summary: Vì sao một danh xưng dành cho Đức Maria lại làm rung chuyển cả Giáo hội và đế quốc vào đầu thế kỷ V? Theotokos có nghĩa là gì, Công đồng Êphêsô đã quyết định điều gì, và vì sao Công giáo cùng Chính Thống giáo vẫn dùng danh xưng ấy mỗi ngày trong lời kinh của mình?

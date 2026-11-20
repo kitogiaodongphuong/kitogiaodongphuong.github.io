@@ -1,6 +1,6 @@
 ---
 title: Ba Ngôi trong truyền thống Đông phương
-date: 2026-11-20
+date: 2026-11-20T22:58:00+07:00
 category: Thần học
 tags: [Giáo phụ và truyền thống, Nghệ thuật và văn hóa]
 summary: Làm sao nói về một Thiên Chúa duy nhất mà vẫn là Cha, Con và Thánh Thần? Bài viết đi theo các giáo phụ miền Cappadocia, ý niệm Chúa Cha là nguồn mạch, lời dạy về sự ở trong nhau của Ba Ngôi và linh ảnh Ba Ngôi của Andrei Rublev, để thấy cách truyền thống Đông phương cầu nguyện và suy tư về mầu nhiệm trung tâm của đức tin Kitô giáo.

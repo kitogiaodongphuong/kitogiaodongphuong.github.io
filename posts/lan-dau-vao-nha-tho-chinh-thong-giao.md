@@ -1,6 +1,6 @@
 ---
 title: Lần đầu bước vào một nhà thờ Chính Thống giáo
-date: 2026-11-20
+date: 2026-11-20T23:25:00+07:00
 category: Phụng vụ và bí tích
 tags: [Nghệ thuật và văn hóa, Linh đạo và đời sống thiêng liêng]
 summary: Bạn sẽ thấy gì, nghe gì và nên làm gì khi lần đầu dự Phụng Vụ Thánh trong một nhà thờ Chính Thống giáo? Bài viết đi qua bố cục của ngôi nhà thờ, bức vách linh ảnh, nến, cử chỉ tôn kính, diễn tiến của buổi lễ và những ranh giới cần tôn trọng, nhất là về việc rước lễ, để một người Công giáo hay người ngoài Giáo hội đều có thể đến một cách bình an.

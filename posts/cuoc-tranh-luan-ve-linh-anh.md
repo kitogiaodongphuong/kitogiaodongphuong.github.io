@@ -1,6 +1,6 @@
 ---
 title: Cuộc tranh luận về linh ảnh
-date: 2026-11-20
+date: 2026-11-20T23:08:00+07:00
 category: Lịch sử Giáo hội
 tags: [Thần học, Nghệ thuật và văn hóa]
 summary: Hơn một thế kỷ, từ thập niên 720 đến năm 843, đế quốc Byzantine bị xé đôi vì một câu hỏi tưởng chừng chỉ thuộc về nghệ thuật, đó là có được vẽ và tôn kính hình ảnh Đức Kitô và các thánh hay không. Bài viết kể lại diễn tiến của cuộc tranh luận, các lập luận của hai phía, và vì sao Công đồng Nicêa II cùng những người bảo vệ linh ảnh đã đặt nền cho cách người Kitô hữu Đông phương cầu nguyện trước hình ảnh thánh cho đến nay.
