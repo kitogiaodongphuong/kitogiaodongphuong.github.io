@@ -177,6 +177,7 @@ function layout({ title, desc, body, url = "/", ogImage }) {
       </div>
     </div>
   </nav>
+  <div class="ornament-band" aria-hidden="true"></div>
 
 ${body}
 
