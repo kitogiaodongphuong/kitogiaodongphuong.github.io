@@ -974,3 +974,35 @@ h1, h2, h3, h4, .brand-name {
   text-decoration-thickness: 2px;
   text-underline-offset: 8px;
 }
+
+/* Logo lớn hơn một chút, cân đối với tên website */
+.header-inner { min-height: 90px; }
+.brand { gap: 18px; align-items: center; }
+.brand-mark { width: 68px; height: 68px; }
+.brand-name { line-height: 1.25; }
+.brand-name .brand-pre { margin-bottom: 4px; }
+@media (max-width: 760px) {
+  .header-inner { min-height: 76px; }
+  .brand { gap: 11px; }
+  .brand-mark { width: 50px; height: 50px; }
+}
+
+/* Hiệu ứng rê chuột nhẹ cho menu: đường gạch vàng đồng mọc ra từ giữa */
+.nav-links a { position: relative; }
+.nav-links a:not([aria-current])::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: 6px;
+  height: 2px;
+  background: var(--bronze);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform .25s ease;
+  pointer-events: none;
+}
+@media (hover: hover) {
+  .nav-links a:not([aria-current]):hover::after { transform: scaleX(1); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .nav-links a, .nav-links a::after { transition: none; }
+}
