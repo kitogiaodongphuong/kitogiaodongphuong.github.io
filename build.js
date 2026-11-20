@@ -140,7 +140,7 @@ function layout({ title, desc, body, url = "/", ogImage }) {
   <nav class="navigation" aria-label="Điều hướng chính">
     <div class="container nav-inner">
       <div class="nav-links" id="navLinks">
-        ${nav.map(([h, t]) => `<a href="${h}"${h === url ? ' aria-current="page"' : ""}>${t}</a>`).join("\n        ")}
+        ${nav.map(([h, t]) => `<a href="${h}"${h === url || (h !== "/" && url.startsWith(h)) ? ' aria-current="page"' : ""}>${t}</a>`).join("\n        ")}
       </div>
     </div>
   </nav>
