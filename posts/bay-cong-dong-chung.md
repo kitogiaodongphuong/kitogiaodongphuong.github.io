@@ -7,7 +7,7 @@ summary: Từ Nicêa năm 325 đến Nicêa năm 787, bảy Công đồng chung 
 featured: false
 image: https://commons.wikimedia.org/wiki/Special:FilePath/Topkapi_Istanbul_2013_4.jpg?width=1400
 image_alt: Nhà thờ Hagia Irene ở Istanbul, nơi Công đồng Constantinople năm 381 đã họp
-image_caption: Nhà thờ Hagia Irene · Istanbul
+image_caption: Nhà thờ Hagia Irene ở Istanbul, nơi Công đồng chung Constantinople năm 381 đã họp.
 ---
 
 Khi một người Công giáo và một tín hữu Chính Thống giáo cùng đọc Kinh Tin Kính trong nhà thờ của mình, họ đang tuyên xưng gần như cùng một bản văn, được hình thành cách đây hơn mười sáu thế kỷ qua những cuộc nhóm họp của các giám mục tại những thành phố nay thuộc lãnh thổ Thổ Nhĩ Kỳ. Điều ấy dễ bị khuất lấp giữa những tranh luận về Đại Ly giáo, về mệnh đề *Filioque* hay về quyền tối thượng của Giám mục Rôma. Thế nhưng, trước khi các chia rẽ trở nên sâu sắc, Giáo hội Đông phương và Tây phương đã có một thời kỳ dài cùng nhau tìm cách diễn tả đức tin lãnh nhận từ các Tông đồ, và thành quả của thời kỳ ấy vẫn là di sản chung của cả hai truyền thống cho đến hôm nay.

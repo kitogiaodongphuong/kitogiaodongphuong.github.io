@@ -1076,3 +1076,6 @@ body.dark .post-body > p:first-child::first-letter { color: var(--gold-soft); }
 @media (max-width: 760px) {
   .navigation:not(.open) { display: none; }
 }
+
+/* Chú thích ảnh bìa ở đầu bài viết */
+.post .post-figure figcaption.cover-caption { margin-top: 8px; font-size: 14px; line-height: 1.5; color: var(--muted); text-align: center; }

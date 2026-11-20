@@ -380,7 +380,7 @@ for (const p of posts) {
     ${
       p.image
         ? `<figure class="post-figure"><img src="${esc(p.image)}" alt="${esc(p.image_alt || p.title)}"${p.image_position ? ` style="object-position:${esc(p.image_position)}"` : ""}>${
-            p.image_credit ? `<figcaption class="image-credit">${p.image_credit}</figcaption>` : ""
+            p.image_caption || p.image_credit ? `<figcaption class="image-credit cover-caption">${p.image_caption ? esc(p.image_caption) : p.image_credit}</figcaption>` : ""
           }</figure>`
         : ""
     }

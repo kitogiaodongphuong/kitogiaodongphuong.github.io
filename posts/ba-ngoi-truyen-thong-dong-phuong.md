@@ -8,7 +8,7 @@ featured: false
 image: https://commons.wikimedia.org/wiki/Special:FilePath/Andrey_Rublev_-_%D0%A1%D0%B2._%D0%A2%D1%80%D0%BE%D0%B8%D1%86%D0%B0_-_Google_Art_Project.jpg?width=1400
 image_position: center 28%
 image_alt: Linh ảnh Ba Ngôi của Andrei Rublev
-image_caption: Linh ảnh Ba Ngôi của Andrei Rublev · đầu thế kỷ XV
+image_caption: Linh ảnh Ba Ngôi của Andrei Rublev, đầu thế kỷ XV, vẽ cảnh ba vị khách của Abraham tại Mamre.
 ---
 
 Mỗi lần làm dấu thánh giá, người Kitô hữu thưa lên danh Cha và Con và Thánh Thần, dù ở một giáo xứ Công giáo tại Việt Nam hay trước bức vách linh ảnh của một nhà thờ ở Athens hay Moskva. Lời tuyên xưng ấy ngắn đến nỗi dễ trôi qua mà không ai để ý, nhưng phía sau nó là một trong những công trình suy tư gian nan nhất của Giáo hội cổ đại, kéo dài suốt thế kỷ IV và để lại dấu ấn trên toàn bộ phụng vụ, thánh nghệ và đời sống cầu nguyện của cả Đông lẫn Tây.

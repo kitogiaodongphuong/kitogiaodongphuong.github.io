@@ -7,7 +7,7 @@ summary: Cuộc Đại Ly giáo giữa Kitô giáo Đông phương và Tây phư
 featured: true
 image: https://images.pexels.com/photos/29571245/pexels-photo-29571245.jpeg?auto=compress&cs=tinysrgb&w=1400
 image_alt: Đại Thánh đường Hagia Sophia ở Constantinople
-image_caption: Đại Thánh đường Hagia Sophia · Constantinople
+image_caption: Đại Thánh đường Hagia Sophia ở Constantinople, nơi diễn ra biến cố năm 1054.
 ---
 
 Chiều thứ Bảy, ngày 16 tháng 7 năm 1054, khi giờ kinh chiều sắp bắt đầu tại Đại Thánh đường Hagia Sophia ở Constantinople, Hồng y Humbert, đặc sứ của Đức Giáo hoàng Lêô IX, tiến đến bàn thờ và đặt xuống một văn kiện. Sau đó, ông quay lưng rời khỏi thánh đường, để lại phía sau một hành động sẽ được lịch sử ghi nhớ như biểu tượng của sự đoạn tuyệt giữa Kitô giáo Đông phương và Tây phương.

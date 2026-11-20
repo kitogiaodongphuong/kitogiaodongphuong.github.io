@@ -7,7 +7,7 @@ summary: Vì sao một danh xưng dành cho Đức Maria lại làm rung chuyể
 featured: false
 image: https://images.pexels.com/photos/24734798/pexels-photo-24734798.jpeg?auto=compress&cs=tinysrgb&w=1400
 image_alt: Bức khảm Đức Maria và Con Trẻ trong nhà thờ Chora ở Istanbul
-image_caption: Bức khảm Byzantine tại nhà thờ Chora · Istanbul
+image_caption: Bức khảm Đức Maria và Con Trẻ trong nhà thờ Chora ở Istanbul, thuộc nghệ thuật Byzantine.
 ---
 
 Mỗi lần đọc Kinh Kính Mừng, người Công giáo Việt Nam thưa lên lời xin “Thánh Maria, Đức Mẹ Chúa Trời”, và mỗi lần cử hành Phụng Vụ Thánh, tín hữu Chính Thống giáo gọi Đức Maria bằng một từ Hy Lạp là *Theotokos*. Hai cách gọi nghe có vẻ khác nhau nhưng thật ra là một. Điều ít người để ý là danh xưng giản dị ấy đã từng là tâm điểm của một cuộc khủng hoảng làm rạn nứt cả Giáo hội lẫn đế quốc, dẫn đến một Công đồng chung, và để lại những hệ quả kéo dài đến tận thế kỷ chúng ta.

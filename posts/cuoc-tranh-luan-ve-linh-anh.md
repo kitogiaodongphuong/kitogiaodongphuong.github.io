@@ -7,7 +7,7 @@ summary: Hơn một thế kỷ, từ thập niên 720 đến năm 843, đế qu�
 featured: false
 image: https://images.pexels.com/photos/5947351/pexels-photo-5947351.jpeg?auto=compress&cs=tinysrgb&w=1400
 image_alt: Bức khảm Đức Kitô, Đức Mẹ và thánh Gioan Tẩy Giả trong Hagia Sophia ở Istanbul
-image_caption: Bức khảm trong Hagia Sophia · Istanbul
+image_caption: Bức khảm Đức Kitô, Đức Mẹ và thánh Gioan Tẩy Giả trong Hagia Sophia, Istanbul.
 ---
 
 Bước vào một nhà thờ Chính Thống giáo, người ta thường thấy tín hữu dừng lại trước một linh ảnh, làm dấu thánh giá, cúi mình, đặt môi hôn lên hình ảnh rồi mới đi tiếp. Đối với người Kitô hữu Việt Nam quen với tượng và ảnh thánh trong nhà thờ, cử chỉ ấy có lẽ không xa lạ. Nhưng ít ai nghĩ rằng cử chỉ giản dị ấy đã từng là điều có thể khiến một người phải chịu đày ải và bách hại, và rằng để được phép làm như thế, Giáo hội đã phải trải qua hơn một trăm năm tranh luận, họp công đồng và chịu bách hại.
