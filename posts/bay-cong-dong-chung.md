@@ -74,4 +74,10 @@ Dẫu vậy, điều đáng lưu tâm hơn cả là di sản chung mà bảy Cô
 
 Có lẽ điều đáng suy ngẫm nhất là các nghị phụ năm xưa không tranh luận chỉ vì hứng thú lý thuyết. Mỗi thuật ngữ được lựa chọn, từ *homoousios* đến *Theotokos*, hay những công thức như “không lẫn lộn, không biến đổi, không phân chia và không tách biệt”, đều nhằm bảo vệ một xác tín căn bản: nơi Đức Giêsu Kitô, Thiên Chúa thực sự đến với con người và thực sự mang lấy thân phận nhân loại, để con người được tham dự vào sự sống thần linh. Khi cùng đọc Kinh Tin Kính trong Thánh lễ hay Phụng Vụ Thánh, các tín hữu Đông phương và Tây phương vẫn đang tiếp nhận di sản ấy. Giữa những khác biệt về lịch sử, thần học và cơ cấu Giáo hội, họ vẫn có thể nhận ra rằng đã từng có một nền tảng đức tin chung, được cùng nhau gìn giữ trong những thế kỷ đầu của Kitô giáo, và chính nền tảng ấy là điểm tựa để xây dựng sự hiệp nhất trong tương lai.
 
-Để tìm hiểu sâu hơn, độc giả có thể tham khảo các bản văn của bảy Công đồng chung do Philip Schaff biên tập trong bộ *Nicene and Post-Nicene Fathers*, phần trình bày về các Công đồng trong cuốn *The Orthodox Church* của Giám mục Kallistos Ware, cũng như công trình của Norman Tanner, *Decrees of the Ecumenical Councils*.
+## Tài liệu tham khảo
+
+- Philip Schaff (chủ biên), *Nicene and Post-Nicene Fathers*, loạt II, tập 14, *The Seven Ecumenical Councils*, đọc toàn văn tại [CCEL](https://ccel.org/ccel/schaff/npnf214).
+- Kallistos Ware, *The Orthodox Church*, phần trình bày về các Công đồng chung.
+- Norman Tanner (chủ biên), *Decrees of the Ecumenical Councils*.
+- Đức Phaolô VI và Đức Thượng phụ Shenouda III, [Tuyên bố chung ngày 10 tháng 5 năm 1973](https://www.vatican.va/content/paul-vi/en/speeches/1973/may/documents/hf_p-vi_spe_19730510_dichiarazione-comune.html), trên trang của Tòa Thánh.
+- Nhà thờ Chính Thống Hoa Kỳ (OCA), các bài [Công đồng chung thứ ba tại Êphêsô](https://www.oca.org/orthodoxy/the-orthodox-faith/church-history/fifth-century/third-ecumenical-council) và [Phong trào phá hủy linh ảnh](https://www.oca.org/orthodoxy/the-orthodox-faith/church-history/eighth-century/iconoclasm).
