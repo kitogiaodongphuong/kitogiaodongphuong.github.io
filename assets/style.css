@@ -957,3 +957,20 @@ h1, h2, h3, h4, .brand-name {
 .menu-button:focus-visible,
 .search-box input:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
 .theme-button svg { display: block; }
+
+/* Màu vàng đồng lấy từ biểu trưng, nối header với thanh menu */
+:root, body.dark { --bronze: #bf8f45; --gold-soft: #f1dba8; }
+.top-header { border-bottom: 0; }
+.navigation {
+  border-top: 1px solid var(--bronze);
+  border-bottom: 1px solid var(--bronze);
+}
+.nav-links a { transition: color .15s; }
+.nav-links a:hover { opacity: 1; color: var(--gold-soft); }
+.nav-links a[aria-current="page"] {
+  color: var(--gold-soft);
+  text-decoration: underline;
+  text-decoration-color: var(--bronze);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 8px;
+}
