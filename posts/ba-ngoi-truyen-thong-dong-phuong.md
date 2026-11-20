@@ -5,9 +5,10 @@ category: Thần học
 tags: [Giáo phụ và truyền thống, Nghệ thuật và văn hóa]
 summary: Làm sao nói về một Thiên Chúa duy nhất mà vẫn là Cha, Con và Thánh Thần? Bài viết đi theo các giáo phụ miền Cappadocia, ý niệm Chúa Cha là nguồn mạch, lời dạy về sự ở trong nhau của Ba Ngôi và linh ảnh Ba Ngôi của Andrei Rublev, để thấy cách truyền thống Đông phương cầu nguyện và suy tư về mầu nhiệm trung tâm của đức tin Kitô giáo.
 featured: false
-image: https://images.pexels.com/photos/2563678/pexels-photo-2563678.jpeg?auto=compress&cs=tinysrgb&w=1400
-image_alt: Toàn cảnh vùng Göreme ở Cappadocia lúc bình minh
-image_caption: Vùng Göreme, Cappadocia, miền đất quê hương của các giáo phụ Cappadocia
+image: https://commons.wikimedia.org/wiki/Special:FilePath/Andrey_Rublev_-_%D0%A1%D0%B2._%D0%A2%D1%80%D0%BE%D0%B8%D1%86%D0%B0_-_Google_Art_Project.jpg?width=1400
+image_position: center 28%
+image_alt: Linh ảnh Ba Ngôi của Andrei Rublev
+image_caption: Linh ảnh Ba Ngôi của Andrei Rublev · đầu thế kỷ XV
 ---
 
 Mỗi lần làm dấu thánh giá, người Kitô hữu thưa lên danh Cha và Con và Thánh Thần, dù ở một giáo xứ Công giáo tại Việt Nam hay trước bức vách linh ảnh của một nhà thờ ở Athens hay Moskva. Lời tuyên xưng ấy ngắn đến nỗi dễ trôi qua mà không ai để ý, nhưng phía sau nó là một trong những công trình suy tư gian nan nhất của Giáo hội cổ đại, kéo dài suốt thế kỷ IV và để lại dấu ấn trên toàn bộ phụng vụ, thánh nghệ và đời sống cầu nguyện của cả Đông lẫn Tây.
@@ -62,7 +63,7 @@ Theo thánh Gioan Damascênô, ba Ngôi gắn bó với nhau và hiện hữu tr
 
 Truyền thống Đông phương không chỉ nói về Ba Ngôi bằng chữ mà còn bằng màu sắc. Linh ảnh nổi tiếng nhất là bức *Ba Ngôi* của thầy dòng Andrei Rublev, vẽ vào đầu thế kỷ XV, mà các nguồn khác nhau định niên đại khoảng năm 1410, hoặc trong khoảng 1425 đến 1427. Bức linh ảnh dựa trên trình thuật trong sách Sáng Thế đoạn 18, khi Chúa hiện đến với Abraham tại Mamre dưới hình ba vị khách, và truyền thống Kitô giáo từ lâu đã đọc cảnh ấy như một dấu hiệu báo trước Ba Ngôi. Các giáo phụ như thánh Cyrillô Alexandria đã diễn giải cảnh Mamre theo hướng ấy.
 
-<figure class="post-figure"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Andrey_Rublev_-_%D0%A1%D0%B2._%D0%A2%D1%80%D0%BE%D0%B8%D1%86%D0%B0_-_Google_Art_Project.jpg?width=700" alt="Linh ảnh Ba Ngôi của Andrei Rublev" loading="lazy" style="width:auto;max-width:100%;max-height:560px;object-fit:contain;margin:0 auto"><figcaption class="image-credit">Linh ảnh Ba Ngôi của Andrei Rublev, đầu thế kỷ XV, thường được gọi là Ba Ngôi Cựu Ước.</figcaption></figure>
+<figure class="post-figure"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ravenna_Basilica_of_San_Vitale_mosaic2.jpg?width=1000" alt="Abraham và Sara tiếp đãi ba vị khách, bức khảm ở nhà thờ San Vitale, Ravenna" loading="lazy"><figcaption class="image-credit">Abraham và Sara tiếp đãi ba vị khách, bức khảm thế kỷ VI ở nhà thờ San Vitale, Ravenna, sớm hơn linh ảnh của Rublev hơn tám thế kỷ.</figcaption></figure>
 
 Điểm độc đáo của Rublev là ông lược bỏ gần hết khung cảnh kể chuyện. Abraham và Sara không còn xuất hiện, và ba thiên thần ngồi quanh một bàn tiệc, dáng vẻ giống nhau, đầu cúi về nhau, thân hình tạo thành một vòng tròn lặng lẽ. Trên bàn chỉ còn một chén, mà nhiều người đọc như dấu chỉ của Thánh Thể. Đối với thời của Rublev, Ba Ngôi là hiện thân của hiệp nhất, bình an, hài hòa, yêu thương và khiêm hạ. Nhiều nhà chú giải cho rằng ba dáng ngồi gợi lên Chúa Cha, Chúa Con và Chúa Thánh Thần theo thứ tự từ trái sang phải, nhưng cách đọc này vẫn còn được bàn luận, và có lẽ chính sự lặng lẽ ấy là điều khiến bức tranh đi sâu vào lòng người hơn mọi lời giải thích.
 

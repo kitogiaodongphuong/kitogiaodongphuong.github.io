@@ -214,7 +214,7 @@ function tocBlock(p) {
 function card(p) {
   return `<article class="article-card">
             <div class="article-art">${
-              p.image ? `<img src="${esc(p.image)}" alt="${esc(p.image_alt || p.title)}" loading="lazy">` : "✝"
+              p.image ? `<img src="${esc(p.image)}" alt="${esc(p.image_alt || p.title)}" loading="lazy"${p.image_position ? ` style="object-position:${esc(p.image_position)}"` : ""}>` : "✝"
             }</div>
             <div class="article-copy">
               <div class="article-tags">${tagLinks(p)}</div>
@@ -290,7 +290,7 @@ ${
           <a class="primary-link" href="${featured.url}">Khám phá bài viết →</a>
         </div>
         <div class="hero-art">
-          ${featured.image ? `<img class="hero-photo" src="${esc(featured.image)}" alt="${esc(featured.image_alt || featured.title)}" fetchpriority="high">` : ""}
+          ${featured.image ? `<img class="hero-photo" src="${esc(featured.image)}" alt="${esc(featured.image_alt || featured.title)}" fetchpriority="high"${featured.image_position ? ` style="object-position:${esc(featured.image_position)}"` : ""}>` : ""}
           ${featured.image_caption ? `<span class="hero-art-note">${esc(featured.image_caption)}</span>` : ""}
         </div>
       </div>
@@ -379,7 +379,7 @@ for (const p of posts) {
     <div class="meta">${fmtDate(p.date)} · ${p.minutes} phút đọc${p.author ? ` · ${esc(p.author)}` : " · Ban biên tập"}</div>
     ${
       p.image
-        ? `<figure class="post-figure"><img src="${esc(p.image)}" alt="${esc(p.image_alt || p.title)}">${
+        ? `<figure class="post-figure"><img src="${esc(p.image)}" alt="${esc(p.image_alt || p.title)}"${p.image_position ? ` style="object-position:${esc(p.image_position)}"` : ""}>${
             p.image_credit ? `<figcaption class="image-credit">${p.image_credit}</figcaption>` : ""
           }</figure>`
         : ""
