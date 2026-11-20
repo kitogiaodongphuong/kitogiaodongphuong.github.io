@@ -13,7 +13,7 @@ Website: https://kitogiaodongphuong.github.io
 title: Tiêu đề bài viết
 date: 2026-11-25
 category: Thần học
-tags: [Thần học, Linh đạo]
+tags: [Thần học, Linh đạo và đời sống thiêng liêng]
 summary: Một hai câu mô tả ngắn hiện ở trang chủ.
 image: https://địa-chỉ-ảnh.jpg        (không bắt buộc)
 image_credit: 'Ảnh: tên tác giả'      (không bắt buộc)
@@ -29,6 +29,8 @@ Nội dung bài viết viết ở đây.
 4. Bấm **Commit changes**. Khoảng 1 phút sau bài xuất hiện trên website.
 
 `category` phải đúng một trong các chuyên mục trong file `site.json`.
+`tags` chỉ được ghi tên các chuyên mục có sẵn (đúng từng chữ), mỗi nhãn là một chuyên mục khác mà bài cũng thuộc về; bài sẽ hiện ở cả các chuyên mục đó và nhãn bấm vào được. Ghi sai tên, web sẽ báo lỗi và liệt kê tên đúng.
+Mục lục tự động được tạo từ các dòng `##` (và `###`) trong bài, chỉ hiện khi bài có từ 3 đề mục `##` trở lên.
 Muốn ẩn một bài chưa xong, thêm dòng `draft: true`.
 
 ## Các file khác

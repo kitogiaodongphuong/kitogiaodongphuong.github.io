@@ -35,6 +35,25 @@ const fmtDate = (d) => {
 // ---------- Đọc dữ liệu ----------
 const catByName = new Map(site.categories.map((c) => [c.name, c]));
 
+// ---------- Mục lục tự động ----------
+const slugify = (t) =>
+  t.toLowerCase().replace(/đ/g, "d").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+function withToc(html) {
+  const toc = [];
+  const used = new Set();
+  const out = html.replace(/<h([23])([^>]*)>([\s\S]*?)<\/h\1>/g, (m, lvl, attrs, inner) => {
+    const text = inner.replace(/<[^>]+>/g, "").replace(/&amp;/g, "&").replace(/&#39;/g, "'").replace(/&quot;/g, '"').trim();
+    let id = slugify(text) || "muc";
+    let n = 2;
+    const base = id;
+    while (used.has(id)) id = `${base}-${n++}`;
+    used.add(id);
+    toc.push({ level: Number(lvl), id, text });
+    return `<h${lvl}${attrs} id="${id}">${inner}</h${lvl}>`;
+  });
+  return { html: out, toc };
+}
+
 const posts = fs
   .readdirSync(path.join(ROOT, "posts"))
   .filter((f) => f.endsWith(".md"))
@@ -51,15 +70,29 @@ const posts = fs
           `Các chuyên mục hợp lệ: ${site.categories.map((c) => c.name).join(" | ")}`
       );
     }
+    const rawTags = data.tags || [];
+    for (const t of rawTags) {
+      if (!catByName.has(t)) {
+        throw new Error(
+          `posts/${f}: nhãn "${t}" không phải tên chuyên mục. Chỉ được dùng nhãn trùng tên chuyên mục: ` +
+            site.categories.map((c) => c.name).join(" | ")
+        );
+      }
+    }
+    // Chuyên mục chính luôn đứng đầu, kế đến là các nhãn (đều là chuyên mục), không trùng lặp
+    const tagCats = [cat, ...rawTags.map((t) => catByName.get(t))].filter((c, i, a) => a.indexOf(c) === i);
     const words = content.split(/\s+/).filter(Boolean).length;
+    const { html, toc } = withToc(marked.parse(content));
     return {
       ...data,
       slug,
       cat,
-      tags: data.tags || [],
+      tagCats,
+      tags: tagCats.map((c) => c.name),
+      toc,
       summary: data.summary || "",
       minutes: Math.max(1, Math.ceil(words / 200)),
-      html: marked.parse(content),
+      html,
       text: content.replace(/[#>*_`\[\]()]/g, " "),
       url: `/bai-viet/${slug}/`,
     };
@@ -164,13 +197,27 @@ ${body}
 }
 
 // ---------- Thành phần ----------
+function tagLinks(p) {
+  return p.tagCats.map((c) => `<a href="/chuyen-muc/${c.slug}/">${esc(c.name)}</a>`).join("");
+}
+
+function tocBlock(p) {
+  if (p.toc.filter((t) => t.level === 2).length < 3) return "";
+  return `<details class="toc">
+      <summary>Mục lục</summary>
+      <ol>
+        ${p.toc.map((t) => `<li class="toc-l${t.level}"><a href="#${t.id}">${esc(t.text)}</a></li>`).join("\n        ")}
+      </ol>
+    </details>`;
+}
+
 function card(p) {
   return `<article class="article-card">
             <div class="article-art">${
               p.image ? `<img src="${esc(p.image)}" alt="${esc(p.image_alt || p.title)}" loading="lazy">` : "✝"
             }</div>
             <div class="article-copy">
-              <div class="article-tags">${p.tags.map((t) => `<span>${esc(t)}</span>`).join("")}</div>
+              <div class="article-tags">${tagLinks(p)}</div>
               <h3><a href="${p.url}">${esc(p.title)}</a></h3>
               <p>${esc(p.summary)}</p>
               <div class="article-meta">${fmtDate(p.date)} · ${p.minutes} phút đọc</div>
@@ -183,7 +230,7 @@ function categoryList() {
   return `<ul class="category-list">
             ${site.categories
               .map((c, i) => {
-                const n = posts.filter((p) => p.cat.slug === c.slug).length;
+                const n = posts.filter((p) => p.tagCats.includes(c)).length;
                 return `<li><a href="/chuyen-muc/${c.slug}/"><span class="category-number">${String(i + 1).padStart(2, "0")}</span>${esc(c.name)}<span class="category-count">${n}</span></a></li>`;
               })
               .join("\n            ")}
@@ -307,7 +354,7 @@ for (const c of site.categories) {
     `chuyen-muc/${c.slug}/index.html`,
     listPage({
       heading: c.name,
-      list: posts.filter((p) => p.cat.slug === c.slug),
+      list: posts.filter((p) => p.tagCats.includes(c)),
       url: `/chuyen-muc/${c.slug}/`,
       title: c.name,
       desc: `Các bài viết thuộc chuyên mục ${c.name}.`,
@@ -337,10 +384,11 @@ for (const p of posts) {
           }</figure>`
         : ""
     }
+    ${tocBlock(p)}
     <article class="post-body">
 ${p.html}
     </article>
-    <div class="article-tags post-tags">${p.tags.map((t) => `<span>${esc(t)}</span>`).join("")}</div>
+    <nav class="post-tags-wrap" aria-label="Chuyên mục của bài viết"><span class="post-tags-label">Chuyên mục:</span><div class="article-tags post-tags">${tagLinks(p)}</div></nav>
     <p class="back-bottom"><a href="/bai-viet/">← Trở về danh sách bài viết</a></p>
   </main>`,
     })

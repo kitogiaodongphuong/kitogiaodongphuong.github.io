@@ -2,7 +2,7 @@
 title: Tờ giấy trên bàn thờ năm 1054
 date: 2026-11-20
 category: Lịch sử Giáo hội
-tags: [Lịch sử Giáo hội, Đại Ly giáo, Giáo phụ và truyền thống]
+tags: [Lịch sử Giáo hội, Thần học, Phụng vụ và bí tích]
 summary: Cuộc Đại Ly giáo giữa Kitô giáo Đông phương và Tây phương thực sự bắt nguồn từ đâu? Vì sao hai truyền thống từng chung một đức tin lại ngày càng xa cách, và những hệ quả của cuộc chia rẽ ấy vẫn còn kéo dài đến hôm nay?
 featured: true
 image: https://images.pexels.com/photos/29571245/pexels-photo-29571245.jpeg?auto=compress&cs=tinysrgb&w=1400
