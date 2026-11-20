@@ -120,7 +120,7 @@ function layout({ title, desc, body, url = "/", ogImage }) {
       <a class="brand" href="/">
         <img class="brand-mark" src="/assets/logo.png" alt="Biểu trưng Thư viện tri thức và tư liệu Kitô giáo Đông phương" width="58" height="58">
         <div>
-          <p class="brand-name">Thư viện tri thức và tư liệu<br>Kitô giáo Đông phương</p>
+          <p class="brand-name"><span class="brand-pre">Thư viện tri thức và tư liệu</span><span class="brand-main">Kitô giáo Đông phương</span></p>
           <p class="brand-tagline">${esc(site.tagline)}</p>
         </div>
       </a>
