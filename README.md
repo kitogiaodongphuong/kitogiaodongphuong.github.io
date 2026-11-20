@@ -16,7 +16,7 @@ category: Thần học
 tags: [Thần học, Linh đạo và đời sống thiêng liêng]
 summary: Một hai câu mô tả ngắn hiện ở trang chủ.
 image: https://địa-chỉ-ảnh.jpg        (không bắt buộc)
-image_position: center 30%            (không bắt buộc, chỉnh phần ảnh được giữ lại khi bị cắt khung, dùng cho ảnh khổ dọc)
+image_position: center 30%            (không bắt buộc, chỉnh phần ảnh được giữ lại ở thẻ bài và ảnh đầu trang chủ khi bị cắt khung, dùng cho ảnh khổ dọc; trong trang bài thì ảnh bìa luôn hiện đủ, không cắt)
 image_credit: 'Ảnh: tên tác giả'      (không bắt buộc)
 ---
 

@@ -8,7 +8,7 @@ featured: false
 image: https://commons.wikimedia.org/wiki/Special:FilePath/Transfiguration_by_Feofan_Grek_from_Spaso-Preobrazhensky_Cathedral_in_Pereslavl-Zalessky_%2815th_c%2C_Tretyakov_gallery%29.jpeg?width=1000
 image_alt: Linh ảnh Chúa Hiển Dung trên núi Tabor, tương truyền của Theophanes người Hy Lạp
 image_caption: Linh ảnh Chúa Hiển Dung đầu thế kỷ XV, hiện ở Phòng tranh Tretyakov ở Moskva, được gán cho Theophanes người Hy Lạp.
-image_position: center 35%
+image_position: center 0%
 ---
 
 Có những câu của các Giáo phụ nghe lạ tai đến mức người đọc hiện nay dễ giật mình. Thánh Athanasiô thành Alexandria, vị đã bảo vệ đức tin Nicêa, viết rằng Con Thiên Chúa đã làm người để loài người được trở nên Thiên Chúa. Nhiều người Công giáo sẽ ngạc nhiên khi biết câu ấy hiện diện ngay trong Sách Giáo lý của Hội thánh Công giáo, ở số 460. Còn trong Kitô giáo Đông phương, ý tưởng ấy mang tên *theosis*, nghĩa là sự thần hóa, và được coi là chìa khóa để hiểu toàn bộ đời sống đức tin.

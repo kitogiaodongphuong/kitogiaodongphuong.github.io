@@ -379,7 +379,7 @@ for (const p of posts) {
     <div class="meta">${fmtDate(p.date)} · ${p.minutes} phút đọc${p.author ? ` · ${esc(p.author)}` : " · Ban biên tập"}</div>
     ${
       p.image
-        ? `<figure class="post-figure"><img src="${esc(p.image)}" alt="${esc(p.image_alt || p.title)}"${p.image_position ? ` style="object-position:${esc(p.image_position)}"` : ""}>${
+        ? `<figure class="post-figure"><img src="${esc(p.image)}" alt="${esc(p.image_alt || p.title)}">${
             p.image_caption || p.image_credit ? `<figcaption class="image-credit cover-caption">${p.image_caption ? esc(p.image_caption) : p.image_credit}</figcaption>` : ""
           }</figure>`
         : ""
