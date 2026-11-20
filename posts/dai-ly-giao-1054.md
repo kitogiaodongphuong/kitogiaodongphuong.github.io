@@ -98,4 +98,8 @@ Có lẽ bài học sâu sắc nhất từ cuộc gặp gỡ năm 1965 nằm ở
 
 Sau gần một nghìn năm, câu hỏi quan trọng không chỉ là ai đã đặt tờ giấy xuống bàn thờ Hagia Sophia năm 1054, nhưng còn là liệu những người mang cùng một đức tin có đủ khiêm tốn, kiên nhẫn và tình huynh đệ để tìm lại con đường hiệp thông hay không.
 
-Để tìm hiểu sâu hơn về chủ đề này, độc giả có thể tham khảo các tác phẩm của Giám mục Kallistos Ware về lịch sử và linh đạo Chính Thống giáo, những nghiên cứu lịch sử của Steven Runciman, cùng bản Tuyên ngôn chung Công giáo – Chính Thống giáo ngày 7 tháng 12 năm 1965 được công bố bởi Tòa Thánh.
+## Tài liệu tham khảo
+
+- Kallistos Ware, *The Orthodox Church*, phần trình bày về lịch sử và đời sống của Chính Thống giáo.
+- Steven Runciman, *The Eastern Schism*, nghiên cứu lịch sử về quan hệ giữa Rôma và Constantinople trong thế kỷ XI và XII.
+- Đức Phaolô VI và Đức Thượng phụ Athenagoras I, [Tuyên ngôn chung Công giáo và Chính Thống giáo ngày 7 tháng 12 năm 1965](https://www.vatican.va/content/paul-vi/en/speeches/1965/documents/hf_p-vi_spe_19651207_common-declaration.html), trên trang của Tòa Thánh.
