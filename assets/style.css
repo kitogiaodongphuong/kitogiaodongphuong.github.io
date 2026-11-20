@@ -924,3 +924,36 @@ h1, h2, h3, h4, .brand-name {
 @media (max-width: 390px) {
   .brand-name .brand-pre { letter-spacing: 0.1em; }
 }
+
+/* Header gọn hơn; ô tìm kiếm chỉ có đường gạch chân; nút giao diện không khung */
+.header-inner { min-height: 84px; }
+@media (max-width: 760px) { .header-inner { min-height: 72px; } }
+
+.search-box {
+  padding: 6px 2px;
+  border: 0;
+  border-bottom: 1px solid var(--muted);
+  border-radius: 0;
+  background: transparent;
+  transition: border-color .15s;
+}
+.search-box:focus-within { border-bottom-color: var(--gold); }
+.search-box input::placeholder { color: var(--muted); opacity: 1; }
+
+.theme-button,
+.menu-button {
+  padding: 6px 8px;
+  border: 0;
+  background: transparent;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  opacity: .85;
+  transition: opacity .15s, color .15s;
+}
+.theme-button:hover,
+.menu-button:hover { opacity: 1; color: var(--red); }
+.theme-button:focus-visible,
+.menu-button:focus-visible,
+.search-box input:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+.theme-button svg { display: block; }

@@ -1,7 +1,9 @@
 // Giao diện sáng/tối (nhớ lựa chọn)
 const themeButton = document.getElementById("themeButton");
+const ICON_CONTRAST = '<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 3.5a8.5 8.5 0 0 1 0 17z" fill="currentColor"/></svg>';
+const ICON_SUN = '<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.8v2.4M12 18.8v2.4M2.8 12h2.4M18.8 12h2.4M5.5 5.5l1.7 1.7M16.8 16.8l1.7 1.7M5.5 18.5l1.7-1.7M16.8 7.2l1.7-1.7"/></svg>';
 const syncTheme = () => {
-  themeButton.textContent = document.body.classList.contains("dark") ? "☀" : "◐";
+  themeButton.innerHTML = document.body.classList.contains("dark") ? ICON_SUN : ICON_CONTRAST;
 };
 syncTheme();
 themeButton.addEventListener("click", () => {

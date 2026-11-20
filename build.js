@@ -125,7 +125,7 @@ function layout({ title, desc, body, url = "/", ogImage }) {
       </a>
       <div class="header-tools">
         ${searchBox("searchInput")}
-        <button class="theme-button" id="themeButton" type="button" aria-label="Đổi giao diện sáng/tối">◐</button>
+        <button class="theme-button" id="themeButton" type="button" aria-label="Đổi giao diện sáng/tối"></button>
         <button class="menu-button" id="menuButton" type="button" aria-label="Mở menu">☰</button>
       </div>
     </div>
