@@ -896,3 +896,16 @@ h1, h2, h3, h4, .brand-name {
   color: var(--muted);
 }
 .verse figcaption::before { content: "— "; }
+
+/* Trang Thuật ngữ */
+.glossary-intro { color: var(--muted); margin: 8px 0 18px; }
+.glossary-letters { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 6px; }
+.glossary-letters a {
+  min-width: 34px; padding: 5px 10px; text-align: center;
+  border: 1px solid var(--line); background: var(--surface); color: var(--ink);
+  text-decoration: none; font-weight: 700;
+}
+.glossary-letters a:hover { border-color: var(--gold); }
+.glossary-full .glossary-panel { scroll-margin-top: 16px; position: relative; }
+.letter-anchor { position: absolute; top: -24px; }
+.glossary-full .glossary-term { margin-top: 0; }

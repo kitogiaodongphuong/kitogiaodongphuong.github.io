@@ -3,6 +3,144 @@
     "term": "Hesychasm",
     "original": "Ἡσυχασμός",
     "short": "Lối sống tĩnh lặng",
-    "meaning": "Truyền thống cầu nguyện và đời sống chiêm niệm, hướng đến sự kết hiệp với Thiên Chúa."
+    "meaning": "Truyền thống cầu nguyện và đời sống chiêm niệm, hướng đến sự kết hiệp với Thiên Chúa. Tên gọi bắt nguồn từ chữ Hy Lạp hesychia, nghĩa là sự tĩnh lặng."
+  },
+  {
+    "term": "Abbot / Abbess",
+    "original": "Ἡγούμενος / Ἡγουμένη",
+    "short": "Viện phụ / Viện mẫu",
+    "meaning": "Người đứng đầu một đan viện nam hoặc nữ, chăm lo đời sống thiêng liêng và sinh hoạt chung của cộng đoàn."
+  },
+  {
+    "term": "Akathist",
+    "original": "Ἀκάθιστος ὕμνος",
+    "short": "Thánh thi Akathist (hoặc Kinh Akathist)",
+    "meaning": "Bài thánh thi nổi tiếng nhất dâng kính Đức Mẹ, theo thói quen được hát khi cộng đoàn đứng. Tên Akathistos có nghĩa là “không ngồi”."
+  },
+  {
+    "term": "Archbishop",
+    "original": "Ἀρχιεπίσκοπος",
+    "short": "Tổng giám mục",
+    "meaning": "Giám mục giữ chức vụ cao hơn trong hàng giám mục, thường cai quản một địa phận lớn hoặc có vị trí danh dự trong một Giáo hội."
+  },
+  {
+    "term": "Bishop",
+    "original": "Ἐπίσκοπος",
+    "short": "Giám mục",
+    "meaning": "Người lãnh nhận chức vụ giám sát và chăm sóc một cộng đoàn Giáo hội địa phương, nối tiếp truyền thống các Tông đồ."
+  },
+  {
+    "term": "Church Fathers",
+    "original": "Πατέρες τῆς Ἐκκλησίας",
+    "short": "Các Thánh Giáo phụ",
+    "meaning": "Các vị thầy của Hội Thánh thời sơ khai, những người đã trình bày và bảo vệ đức tin Kitô giáo qua giảng dạy và trước tác."
+  },
+  {
+    "term": "Divine Liturgy",
+    "original": "Θεία Λειτουργία",
+    "short": "Phụng Vụ Thánh",
+    "meaning": "Nghi thức cử hành Thánh Thể, là hành vi thờ phượng trung tâm của truyền thống Byzantine."
+  },
+  {
+    "term": "Dormition",
+    "original": "Κοίμησις τῆς Θεοτόκου",
+    "short": "Lễ Đức Mẹ An Giấc",
+    "meaning": "Lễ mừng cuộc an giấc của Đức Maria, được cử hành vào giữa tháng Tám theo lịch phụng vụ của từng Giáo hội. Bên Latinh, lễ tương ứng là lễ Đức Mẹ Hồn Xác Lên Trời."
+  },
+  {
+    "term": "Holy Mysteries",
+    "original": "Ἅγια Μυστήρια",
+    "short": "Bí tích (hoặc Các Mầu nhiệm Thánh)",
+    "meaning": "Cách gọi các bí tích trong truyền thống Đông phương, dựa trên chữ Hy Lạp mystērion, nhấn mạnh chiều kích mầu nhiệm của ân sủng."
+  },
+  {
+    "term": "Holy Tradition",
+    "original": "Ἱερὰ Παράδοσις",
+    "short": "Thánh Truyền",
+    "meaning": "Toàn bộ đời sống đức tin được Hội Thánh lưu truyền qua các thế hệ, gồm Kinh Thánh, phụng vụ, các Công đồng, các Giáo phụ và đời sống thánh thiện."
+  },
+  {
+    "term": "Icon",
+    "original": "Εἰκών",
+    "short": "Linh ảnh",
+    "meaning": "Hình ảnh thánh được vẽ theo truyền thống và được tôn kính trong phụng vụ lẫn đời sống cầu nguyện. Công đồng Nicêa II (năm 787) đã xác nhận việc tôn kính này."
+  },
+  {
+    "term": "Iconostasis",
+    "original": "Εἰκονοστάσιον",
+    "short": "Iconostasis (Vách Linh ảnh)",
+    "meaning": "Bức vách trang hoàng nhiều linh ảnh, ngăn giữa gian cung thánh và gian giữa nhà thờ trong truyền thống Byzantine."
+  },
+  {
+    "term": "Kontakion",
+    "original": "Κοντάκιον",
+    "short": "Kinh Kontakion",
+    "meaning": "Bài thánh ca ngắn trong phụng vụ, nêu lên ý nghĩa chính của ngày lễ hay vị thánh được mừng."
+  },
+  {
+    "term": "Matins / Orthros",
+    "original": "Ὄρθρος",
+    "short": "Kinh Sáng",
+    "meaning": "Giờ kinh phụng vụ buổi sáng sớm trong truyền thống Byzantine, được cử hành trước Phụng Vụ Thánh vào các Chúa nhật và ngày lễ."
+  },
+  {
+    "term": "Metropolitan",
+    "original": "Μητροπολίτης",
+    "short": "Giám mục đô thành (hoặc Đô thành trưởng)",
+    "meaning": "Giám mục cai quản một thủ phủ giáo hội (metropolis), thường có vị trí cao trong hàng giám mục của một Giáo hội."
+  },
+  {
+    "term": "Monk",
+    "original": "Μοναχός",
+    "short": "Đan sĩ (hoặc Tu sĩ)",
+    "meaning": "Người chọn sống đời đan tu, dành trọn đời cho cầu nguyện, lao động và sống vâng phục, nghèo khó, khiết tịnh trong một đan viện hoặc nơi ẩn tu."
+  },
+  {
+    "term": "Nativity",
+    "original": "Χριστούγεννα",
+    "short": "Lễ Giáng Sinh",
+    "meaning": "Lễ mừng Chúa Giêsu Kitô giáng sinh, một trong những đại lễ của năm phụng vụ."
+  },
+  {
+    "term": "Orthodox Christianity",
+    "original": "Ὀρθοδοξία",
+    "short": "Chính Thống giáo",
+    "meaning": "Truyền thống Kitô giáo Đông phương. Tên gọi bắt nguồn từ chữ Hy Lạp orthodoxia, có thể hiểu là “tin đúng” hoặc “tôn vinh đúng”."
+  },
+  {
+    "term": "Pascha",
+    "original": "Πάσχα",
+    "short": "Đại Lễ Phục Sinh",
+    "meaning": "Lễ trọng nhất của năm phụng vụ, mừng Chúa Kitô phục sinh. Tên gọi bắt nguồn từ lễ Vượt Qua của dân Israel."
+  },
+  {
+    "term": "Patriarch",
+    "original": "Πατριάρχης",
+    "short": "Đức Thượng Phụ",
+    "meaning": "Giám mục đứng đầu một Giáo hội lớn trong truyền thống Chính Thống, chẳng hạn Constantinople, Alexandria, Antiôkia hay Giêrusalem."
+  },
+  {
+    "term": "Presanctified Liturgy",
+    "original": "Λειτουργία τῶν Προηγιασμένων Δώρων",
+    "short": "Phụng Vụ Tiền Thánh Hiến",
+    "meaning": "Phụng vụ được cử hành trong Mùa Chay, trong đó tín hữu hiệp thông bằng Mình Thánh đã được thánh hiến từ trước."
+  },
+  {
+    "term": "Theotokos",
+    "original": "Θεοτόκος",
+    "short": "Theotokos (Mẹ Thiên Chúa)",
+    "meaning": "Danh hiệu dành cho Đức Maria, nghĩa đen là “Đấng sinh Thiên Chúa”, được Công đồng Êphêsô năm 431 xác nhận."
+  },
+  {
+    "term": "Troparion",
+    "original": "Τροπάριον",
+    "short": "Kinh Troparion",
+    "meaning": "Bài thánh ca ngắn được hát trong các giờ kinh và Phụng Vụ, diễn tả ý nghĩa của ngày lễ hay vị thánh được mừng."
+  },
+  {
+    "term": "Vespers",
+    "original": "Ἑσπερινός",
+    "short": "Kinh Chiều",
+    "meaning": "Giờ kinh phụng vụ buổi chiều, khởi đầu ngày phụng vụ theo cách tính của truyền thống Đông phương."
   }
 ]

@@ -349,6 +349,9 @@ ${p.html}
 }
 
 // ---------- Thuật ngữ ----------
+const gSlug = (t) => t.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+const glossarySorted = [...glossary].sort((a, b) => a.term.localeCompare(b.term, "en"));
+const glossaryLetters = [...new Set(glossarySorted.map((g) => g.term[0].toUpperCase()))];
 write(
   "thuat-ngu/index.html",
   layout({
@@ -356,10 +359,22 @@ write(
     url: "/thuat-ngu/",
     body: `  <main id="top" class="post">
     <h1>Thuật ngữ</h1>
+    <p class="glossary-intro">Bảng đối chiếu các thuật ngữ được dùng thống nhất trong thư viện, kèm tên gốc Hy Lạp và lời giải thích ngắn gọn.</p>
+    <nav class="glossary-letters" aria-label="Mục lục theo chữ cái">${glossaryLetters
+      .map((l) => `<a href="#chu-${l}">${l}</a>`)
+      .join("")}</nav>
     <div class="glossary-full">
-      ${glossary
+      ${glossarySorted
         .map(
-          (g) => `<section class="glossary-panel">
+          (g, i) => `<section class="glossary-panel" id="${gSlug(g.term)}"${
+            i === 0 || g.term[0].toUpperCase() !== glossarySorted[i - 1].term[0].toUpperCase()
+              ? ` data-letter="${g.term[0].toUpperCase()}"`
+              : ""
+          }>${
+            i === 0 || g.term[0].toUpperCase() !== glossarySorted[i - 1].term[0].toUpperCase()
+              ? `<span class="letter-anchor" id="chu-${g.term[0].toUpperCase()}"></span>`
+              : ""
+          }
         <p class="glossary-term">${esc(g.term)}</p>
         <p class="glossary-original">${esc(g.original)} · ${esc(g.short)}</p>
         <p>${esc(g.meaning)}</p>
@@ -401,7 +416,16 @@ write(
       category: p.cat.name,
       tags: p.tags,
       text: p.text.slice(0, 4000),
-    }))
+    })).concat(
+      glossary.map((g) => ({
+        title: `${g.term} — ${g.short}`,
+        url: `/thuat-ngu/#${gSlug(g.term)}`,
+        summary: g.meaning,
+        category: "Thuật ngữ",
+        tags: [g.original],
+        text: "",
+      }))
+    )
   )
 );
 
