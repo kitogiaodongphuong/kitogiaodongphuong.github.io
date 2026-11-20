@@ -787,7 +787,7 @@ img[hidden] { display: none !important; }
 }
 
 .post-body .post-figure { margin: 34px 0; }
-.post-body .post-figure img { display: block; width: 100%; max-height: 480px; object-fit: cover; object-position: center 35%; }
+.post-body .post-figure img { display: block; width: 100%; height: auto; max-height: 560px; object-fit: contain; object-position: center; }
 .post-body .post-figure figcaption { margin-top: 8px; font-size: 14px; line-height: 1.5; color: var(--muted); text-align: center; }
 
 /* ---------- Khung nội dung bổ trợ và bảng trong bài viết ---------- */
