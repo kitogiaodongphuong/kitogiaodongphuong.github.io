@@ -14,7 +14,14 @@ themeButton.addEventListener("click", () => {
 
 // Menu điện thoại
 const navLinks = document.getElementById("navLinks");
-document.getElementById("menuButton").addEventListener("click", () => navLinks.classList.toggle("open"));
+const navBar = navLinks.closest(".navigation");
+const menuButton = document.getElementById("menuButton");
+menuButton.setAttribute("aria-expanded", "false");
+menuButton.addEventListener("click", () => {
+  const open = navLinks.classList.toggle("open");
+  navBar.classList.toggle("open", open);
+  menuButton.setAttribute("aria-expanded", String(open));
+});
 
 // Ảnh lỗi thì ẩn đi, giữ lại nền màu
 document.addEventListener("error", (e) => {

@@ -1071,3 +1071,8 @@ body.dark .post-body > p:first-child::first-letter { color: var(--gold-soft); }
   background: var(--bronze);
 }
 
+
+/* Điện thoại: ẩn hẳn thanh menu xanh khi menu đang đóng */
+@media (max-width: 760px) {
+  .navigation:not(.open) { display: none; }
+}
